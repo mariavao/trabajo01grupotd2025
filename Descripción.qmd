@@ -1,0 +1,64 @@
+---
+title: "Descripción del trabajo"
+author: "Grupo 7"
+editor: visual
+date: "`r Sys.Date()`"
+date-format: "DD/MM/YYYY"
+lang: es
+toc: true
+toc-depth: 4
+number-sections: true
+format:
+  html:
+    code-tools: true
+    code-fold: true
+  pdf: 
+    keep-tex: true
+    header-includes:
+      - \usepackage{float}
+      - \floatplacement{table}{H}
+      - \floatplacement{figure}{H}
+execute: 
+  echo: true
+  warnings: false
+---
+
+\pagebreak
+
+# Proyecto RStudio en grupo
+
+El objetivo es crear un único documento en el que se enuncien los problemas de Teoría de la Decisión bajo Incertidumbre inventados por cada uno de los alumnos que conformen el grupo. En otro documento diferente se incluirán los enunciados de todos los problemas acompañados de su solución con ayuda del código R incluido en la asignatura.
+
+Nota: deben ser los mismos problemas inventados en el proyecto individual.
+
+Recordar:
+
+-   El primer problema será una tabla de decisión con valores inventados y resuelto con cada uno de los métodos o funciones individuales de Incertidumbre por separado (tanto en situación favorable como desfavorable).
+
+-   El segundo problema tendrá un enunciado que se refiera a una situación real y su resolución se llevará a cabo con la función R que devuelve la resolución de todos los métodos en una única tabla. Al final de cada uno de los problemas, debe aparecer muy claramente la conclusión que indique cuál es la decisión final.
+
+# Características
+
+Las características que debe tener el repositorio-proyecto son:
+
+-   El nombre del repositorio debe ser: "usuariogithub/trabajo01grupotd2025"
+
+-   El repositorio lo creará el responsable del grupo y él debe añadir al resto de alumnos componentes del grupo como colaboradores del repositorio.
+
+-   Al menos 5 commits
+
+-   Al menos 5 issues o incidencias
+
+-   Un fichero README.md (markdown sin código R) que incluya una breve descripción del contenido del repositorio, nombres de los alumnos y cómo se realizó la organización.
+
+# Evaluación
+
+La evaluación del trabajo será de la forma:
+
+-   La entrega será a través de una tarea en "Enseñanza Virtual" (EV) en la que cada alumno indicará el enlace al repositorio GitHub que ha creado.
+
+-   La fecha de entrega del trabajo es el viernes 24 de octubre de 2025 a las 23:59.
+
+-   La nota del trabajo será un 10% de la calificación en la evaluación continua de la parte de "problemas".
+
+-   La nota asignada a cada miembro del grupo podrá ser diferente y se tendrá en cuenta la participación en el trabajo como el cumplimiento de los objetivos propuestos.
