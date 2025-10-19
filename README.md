@@ -7,7 +7,7 @@ En este repositorio encontrará tres documentos diferentes:
   
 Los alumnos que han realizado este grupo son:
   - María Varela Oyola
-  - Ángela Pérez Reverte
+  - Ángela Reverte Pagola
   - Juan del Rey Martín
   - Sebastián León Díaz
   

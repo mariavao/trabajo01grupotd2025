@@ -59,3 +59,49 @@ Miguel trabaja desde casa y necesita Internet para videollamadas frecuentes y de
 -   Problemas en videollamadas y reuniones importantes: 1000€
 
 Miguel quiere evaluar cuál sería el coste total del primer año, considerando que podría tener meses de alta demanda de trabajo o meses de baja demanda, y cuál sería la mejor compañía a elegir.
+
+\pagebreak
+
+# Problema 3
+
+Aplicar los criterios de decisión bajo incertidumbre a los problemas cuya matriz de valores numéricos vienen dadas en las tablas siguientes: Realizar tanto en situación favorable como desfavorable.
+
+|     | e1  | e2  | e3  | e4  | e5  | e6  |
+|-----|-----|-----|-----|-----|-----|-----|
+| d1  | 740 | 800 | 500 | 250 | 690 | 900 |
+| d2  | 600 | 600 | 600 | 600 | 600 | 600 |
+| d3  | 120 | 50  | 90  | 300 | 250 | 10  |
+| d4  | 450 | 700 | 900 | 40  | 25  | 5   |
+| d5  | 150 | 200 | 500 | 220 | 430 | 400 |
+
+\pagebreak
+
+# Problema 4
+
+Lucía y Marco tienen que mudarse este sábado y no se ponen de acuerdo sobre cómo hacerlo. Barajan estas opciones: 
+Opción A: Alquilar furgoneta y hacerlo ellos 
+• Pack de 3 horas de furgoneta con km incluidos: 110 €. 
+• Combustible: 12 €. 
+• Hora extra: 35 €. 
+• Si llueve, comprarían fundas/plásticos 8 €. 
+• Si el ascensor del piso nuevo falla, necesitarían 3 horas extra y pedir ayuda puntual 30 € para subir los muebles pesados.
+
+Opción B: Empresa “AhorraMudanzas” 
+• Tarifa base 2 horas: 130 € (furgón y carga/descarga básicos). 
+• Hora extra: 35 €. 
+• Con lluvia o tráfico, suelen tardar 1 hora más. 
+• Si el ascensor está averiado, estiman 2 horas extra y recargo 20 € por subir por escaleras.
+
+Opción C: Empresa “PremiumBox” 
+• Tarifa plana hasta 4 horas: 220 € 
+• Hora extra a partir de la 5.ª: 30 €. 
+• Con lluvia o tráfico normalmente no hay recargos. 
+• Si el ascensor falla, prevén 1 hora extra.
+
+Estados de la naturaleza:
+
+Mudanza fluida (sin lluvia/tráfico y ascensores funcionando).
+
+Lluvia o tráfico moderado.
+
+Ascensor averiado.
