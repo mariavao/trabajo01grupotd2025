@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.553">
+<meta name="generator" content="quarto-1.6.42">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -34,7 +34,7 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -58,16 +58,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </style>
 
 
-<script src="Resolución_files/libs/clipboard/clipboard.min.js"></script>
-<script src="Resolución_files/libs/quarto-html/quarto.js"></script>
-<script src="Resolución_files/libs/quarto-html/popper.min.js"></script>
-<script src="Resolución_files/libs/quarto-html/tippy.umd.min.js"></script>
-<script src="Resolución_files/libs/quarto-html/anchor.min.js"></script>
-<link href="Resolución_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="Resolución_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="Resolución_files/libs/bootstrap/bootstrap.min.js"></script>
-<link href="Resolución_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="Resolución_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="Resolución_files/libs/clipboard/clipboard.min.js"></script>
+<script src="Resolución_files/libs/quarto-html/quarto.js"></script>
+<script src="Resolución_files/libs/quarto-html/popper.min.js"></script>
+<script src="Resolución_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="Resolución_files/libs/quarto-html/anchor.min.js"></script>
+<link href="Resolución_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="Resolución_files/libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="Resolución_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="Resolución_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="Resolución_files/libs/bootstrap/bootstrap-1bc8a17f135ab3d594c857e9f48e611b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 
 
 </head>
@@ -104,8 +104,36 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </ul></li>
   </ul></li>
   <li><a href="#problema-2" id="toc-problema-2" class="nav-link" data-scroll-target="#problema-2"><span class="header-section-number">3</span> Problema 2</a></li>
+  <li><a href="#problema-3" id="toc-problema-3" class="nav-link" data-scroll-target="#problema-3"><span class="header-section-number">4</span> Problema 3</a>
+  <ul>
+  <li><a href="#creación-de-la-matriz-1" id="toc-creación-de-la-matriz-1" class="nav-link" data-scroll-target="#creación-de-la-matriz-1"><span class="header-section-number">4.1</span> Creación de la matriz</a></li>
+  <li><a href="#solución-de-beneficios" id="toc-solución-de-beneficios" class="nav-link" data-scroll-target="#solución-de-beneficios"><span class="header-section-number">4.2</span> Solución de beneficios</a>
+  <ul class="collapse">
+  <li><a href="#criterio-de-wald" id="toc-criterio-de-wald" class="nav-link" data-scroll-target="#criterio-de-wald"><span class="header-section-number">4.2.1</span> Criterio de Wald:</a></li>
+  <li><a href="#método-optimista" id="toc-método-optimista" class="nav-link" data-scroll-target="#método-optimista"><span class="header-section-number">4.2.2</span> Método optimista:</a></li>
+  <li><a href="#criterio-de-hurwicz-2" id="toc-criterio-de-hurwicz-2" class="nav-link" data-scroll-target="#criterio-de-hurwicz-2"><span class="header-section-number">4.2.3</span> Criterio de Hurwicz:</a></li>
+  <li><a href="#criterio-de-savage-2" id="toc-criterio-de-savage-2" class="nav-link" data-scroll-target="#criterio-de-savage-2"><span class="header-section-number">4.2.4</span> Criterio de Savage:</a></li>
+  <li><a href="#criterio-de-laplace-2" id="toc-criterio-de-laplace-2" class="nav-link" data-scroll-target="#criterio-de-laplace-2"><span class="header-section-number">4.2.5</span> Criterio de Laplace:</a></li>
+  <li><a href="#criterio-del-punto-ideal-2" id="toc-criterio-del-punto-ideal-2" class="nav-link" data-scroll-target="#criterio-del-punto-ideal-2"><span class="header-section-number">4.2.6</span> Criterio del Punto Ideal:</a></li>
+  </ul></li>
+  <li><a href="#solución-de-costes" id="toc-solución-de-costes" class="nav-link" data-scroll-target="#solución-de-costes"><span class="header-section-number">4.3</span> Solución de costes:</a>
+  <ul class="collapse">
+  <li><a href="#criterio-de-wald-1" id="toc-criterio-de-wald-1" class="nav-link" data-scroll-target="#criterio-de-wald-1"><span class="header-section-number">4.3.1</span> Criterio de Wald:</a></li>
+  <li><a href="#método-optimista-1" id="toc-método-optimista-1" class="nav-link" data-scroll-target="#método-optimista-1"><span class="header-section-number">4.3.2</span> Método optimista:</a></li>
+  <li><a href="#criterio-de-hurwicz-3" id="toc-criterio-de-hurwicz-3" class="nav-link" data-scroll-target="#criterio-de-hurwicz-3"><span class="header-section-number">4.3.3</span> Criterio de Hurwicz:</a></li>
+  <li><a href="#criterio-de-savage-3" id="toc-criterio-de-savage-3" class="nav-link" data-scroll-target="#criterio-de-savage-3"><span class="header-section-number">4.3.4</span> Criterio de Savage:</a></li>
+  <li><a href="#criterio-de-laplace-3" id="toc-criterio-de-laplace-3" class="nav-link" data-scroll-target="#criterio-de-laplace-3"><span class="header-section-number">4.3.5</span> Criterio de Laplace:</a></li>
+  <li><a href="#criterio-del-punto-ideal-3" id="toc-criterio-del-punto-ideal-3" class="nav-link" data-scroll-target="#criterio-del-punto-ideal-3"><span class="header-section-number">4.3.6</span> Criterio del Punto Ideal:</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#problema-4" id="toc-problema-4" class="nav-link" data-scroll-target="#problema-4"><span class="header-section-number">5</span> Problema 4</a>
+  <ul>
+  <li><a href="#valoraciones" id="toc-valoraciones" class="nav-link" data-scroll-target="#valoraciones"><span class="header-section-number">5.1</span> Valoraciones:</a></li>
+  <li><a href="#creación-de-la-matriz-2" id="toc-creación-de-la-matriz-2" class="nav-link" data-scroll-target="#creación-de-la-matriz-2"><span class="header-section-number">5.2</span> Creación de la matriz</a></li>
+  <li><a href="#solución-de-costes-1" id="toc-solución-de-costes-1" class="nav-link" data-scroll-target="#solución-de-costes-1"><span class="header-section-number">5.3</span> Solución de costes:</a></li>
+  </ul></li>
   </ul>
-<div class="quarto-alternate-formats"><h2>Otros formatos</h2><ul><li><a href="Resolución.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+<div class="quarto-alternate-formats"><h2>Otros formatos</h2><ul><li><a href="Resolución.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
 </div>
 <main class="content" id="quarto-document-content">
 
@@ -128,7 +156,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Fecha de publicación</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">17/10/2025</p>
+      <p class="date">19/10/2025</p>
     </div>
   </div>
   
@@ -156,16 +184,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <summary>Código</summary>
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tinytable)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning: package 'tinytable' was built under R version 4.3.3</code></pre>
-</div>
 </div>
 <div style="page-break-after: always;"></div>
 </section>
 <section id="problema-1" class="level1" data-number="2">
 <h1 data-number="2"><span class="header-section-number">2</span> Problema 1</h1>
 <p>Aplicar los criterios de decisión bajo incertidumbre al problema cuya matriz de valores numéricos viene dada en la siguiente tabla:</p>
-<table class="table">
+<table class="caption-top table">
 <thead>
 <tr class="header">
 <th></th>
@@ -218,137 +243,95 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell">
 <details class="code-fold">
 <summary>Código</summary>
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Creamos la tabla con la función crea.tablaX</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>tabla1 <span class="ot">=</span> <span class="fu">crea.tablaX</span>(<span class="fu">c</span>(<span class="dv">90</span>,<span class="dv">40</span>, <span class="dv">60</span>, <span class="dv">40</span>, <span class="dv">75</span>,</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>                       <span class="dv">50</span>, <span class="dv">70</span>, <span class="dv">55</span>, <span class="dv">65</span>, <span class="dv">60</span>,</span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>                       <span class="dv">20</span>, <span class="dv">80</span>, <span class="dv">90</span>, <span class="dv">75</span>, <span class="dv">50</span>, </span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>                       <span class="dv">70</span>, <span class="dv">45</span>, <span class="dv">40</span>, <span class="dv">95</span>, <span class="dv">30</span>), <span class="at">numalternativas =</span> <span class="dv">4</span>, <span class="at">numestados =</span> <span class="dv">5</span>)</span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Convertimos la tabla en un data.frame</span></span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>tabla_1 <span class="ot">=</span> <span class="fu">as.data.frame</span>(tabla1)</span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Presentamos la tabla de valores</span></span>
-<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a><span class="fu">tt</span>(tabla_1, <span class="at">rownames =</span> T)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Creamos la tabla con la función crea.tablaX</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>tabla1 <span class="ot">=</span> <span class="fu">crea.tablaX</span>(<span class="fu">c</span>(<span class="dv">90</span>,<span class="dv">40</span>, <span class="dv">60</span>, <span class="dv">40</span>, <span class="dv">75</span>,</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>                       <span class="dv">50</span>, <span class="dv">70</span>, <span class="dv">55</span>, <span class="dv">65</span>, <span class="dv">60</span>,</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>                       <span class="dv">20</span>, <span class="dv">80</span>, <span class="dv">90</span>, <span class="dv">75</span>, <span class="dv">50</span>, </span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>                       <span class="dv">70</span>, <span class="dv">45</span>, <span class="dv">40</span>, <span class="dv">95</span>, <span class="dv">30</span>), <span class="at">numalternativas =</span> <span class="dv">4</span>, <span class="at">numestados =</span> <span class="dv">5</span>)</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Convertimos la tabla en un data.frame</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>tabla_1 <span class="ot">=</span> <span class="fu">as.data.frame</span>(tabla1)</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Presentamos la tabla de valores</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="fu">tt</span>(tabla_1, <span class="at">rownames =</span> T)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
 <!-- preamble start -->
 
-    <script>
+    <script src="https://cdn.jsdelivr.net/gh/vincentarelbundock/tinytable@main/inst/tinytable.js"></script>
 
-      function styleCell_gbz8rwfbxam7r9nsvdqh(i, j, css_id) {
-          var table = document.getElementById("tinytable_gbz8rwfbxam7r9nsvdqh");
-          var cell = table.rows[i]?.cells[j];  // Safe navigation to avoid errors
-          if (cell) {
-              console.log(`Styling cell at (${i}, ${j}) with class ${css_id}`);
-              cell.classList.add(css_id);
-          } else {
-              console.warn(`Cell at (${i}, ${j}) not found.`);
-          }
-      }
-      function insertSpanRow(i, colspan, content) {
-        var table = document.getElementById('tinytable_gbz8rwfbxam7r9nsvdqh');
-        var newRow = table.insertRow(i);
-        var newCell = newRow.insertCell(0);
-        newCell.setAttribute("colspan", colspan);
-        // newCell.innerText = content;
-        // this may be unsafe, but innerText does not interpret <br>
-        newCell.innerHTML = content;
-      }
-      function spanCell_gbz8rwfbxam7r9nsvdqh(i, j, rowspan, colspan) {
-        var table = document.getElementById("tinytable_gbz8rwfbxam7r9nsvdqh");
-        const targetRow = table.rows[i];
-        const targetCell = targetRow.cells[j];
-        for (let r = 0; r < rowspan; r++) {
-          // Only start deleting cells to the right for the first row (r == 0)
-          if (r === 0) {
-            // Delete cells to the right of the target cell in the first row
-            for (let c = colspan - 1; c > 0; c--) {
-              if (table.rows[i + r].cells[j + c]) {
-                table.rows[i + r].deleteCell(j + c);
-              }
-            }
-          }
-          // For rows below the first, delete starting from the target column
-          if (r > 0) {
-            for (let c = colspan - 1; c >= 0; c--) {
-              if (table.rows[i + r] && table.rows[i + r].cells[j]) {
-                table.rows[i + r].deleteCell(j);
-              }
-            }
-          }
-        }
-        // Set rowspan and colspan of the target cell
-        targetCell.rowSpan = rowspan;
-        targetCell.colSpan = colspan;
-      }
+    <script>
+      // Create table-specific functions using external factory
+      const tableFns_yyays7m16sdb8z2j4amt = TinyTable.createTableFunctions("tinytable_yyays7m16sdb8z2j4amt");
       // tinytable span after
       window.addEventListener('load', function () {
           var cellsToStyle = [
             // tinytable style arrays after
-          { positions: [ { i: 4, j: 0 }, { i: 4, j: 1 }, { i: 4, j: 2 }, { i: 4, j: 3 }, { i: 4, j: 4 }, { i: 4, j: 5 },  ], css_id: 'tinytable_css_l4x4mm5a1wdblndc253v',}, 
-          { positions: [ { i: 0, j: 0 }, { i: 0, j: 1 }, { i: 0, j: 2 }, { i: 0, j: 3 }, { i: 0, j: 4 }, { i: 0, j: 5 },  ], css_id: 'tinytable_css_cngdau8dqqy4cb1v9kxu',}, 
+          { positions: [ { i: '4', j: 1 }, { i: '4', j: 2 }, { i: '4', j: 3 }, { i: '4', j: 4 }, { i: '4', j: 5 }, { i: '4', j: 6 } ], css_id: 'tinytable_css_r1u2e9lrt08mgd0xd87z',}, 
+          { positions: [ { i: '0', j: 1 }, { i: '0', j: 2 }, { i: '0', j: 3 }, { i: '0', j: 4 }, { i: '0', j: 5 }, { i: '0', j: 6 } ], css_id: 'tinytable_css_5eq79kq3vqnliduky640',}, 
           ];
 
           // Loop over the arrays to style the cells
           cellsToStyle.forEach(function (group) {
               group.positions.forEach(function (cell) {
-                  styleCell_gbz8rwfbxam7r9nsvdqh(cell.i, cell.j, group.css_id);
+                  tableFns_yyays7m16sdb8z2j4amt.styleCell(cell.i, cell.j, group.css_id);
               });
           });
       });
     </script>
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/vincentarelbundock/tinytable@main/inst/tinytable.css">
     <style>
-      /* tinytable css entries after */
-      .table td.tinytable_css_l4x4mm5a1wdblndc253v, .table th.tinytable_css_l4x4mm5a1wdblndc253v { border-bottom: solid #d3d8dc 0.1em; }
-      .table td.tinytable_css_cngdau8dqqy4cb1v9kxu, .table th.tinytable_css_cngdau8dqqy4cb1v9kxu { border-top: solid #d3d8dc 0.1em; border-bottom: solid #d3d8dc 0.05em; }
+    /* tinytable css entries after */
+    #tinytable_yyays7m16sdb8z2j4amt td.tinytable_css_r1u2e9lrt08mgd0xd87z, #tinytable_yyays7m16sdb8z2j4amt th.tinytable_css_r1u2e9lrt08mgd0xd87z {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 0; --line-color-bottom: black; --line-color-left: black; --line-color-right: black; --line-color-top: black; --line-width-bottom: 0.1em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.1em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%;  }
+    #tinytable_yyays7m16sdb8z2j4amt td.tinytable_css_5eq79kq3vqnliduky640, #tinytable_yyays7m16sdb8z2j4amt th.tinytable_css_5eq79kq3vqnliduky640 {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 1; --line-color-bottom: black; --line-color-left: black; --line-color-right: black; --line-color-top: black; --line-width-bottom: 0.05em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.1em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%;  }
     </style>
     <div class="container">
-      <table class="table table-borderless" id="tinytable_gbz8rwfbxam7r9nsvdqh" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
-        <thead>
+      <table class="tinytable" id="tinytable_yyays7m16sdb8z2j4amt" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
         
+        <thead>
               <tr>
-                <th scope="col">rowname</th>
-                <th scope="col">e1</th>
-                <th scope="col">e2</th>
-                <th scope="col">e3</th>
-                <th scope="col">e4</th>
-                <th scope="col">e5</th>
+                <th scope="col" data-row="0" data-col="1">rowname</th>
+                <th scope="col" data-row="0" data-col="2">e1</th>
+                <th scope="col" data-row="0" data-col="3">e2</th>
+                <th scope="col" data-row="0" data-col="4">e3</th>
+                <th scope="col" data-row="0" data-col="5">e4</th>
+                <th scope="col" data-row="0" data-col="6">e5</th>
               </tr>
         </thead>
         
         <tbody>
                 <tr>
-                  <td>d1</td>
-                  <td>90</td>
-                  <td>40</td>
-                  <td>60</td>
-                  <td>40</td>
-                  <td>75</td>
+                  <td data-row="1" data-col="1">d1</td>
+                  <td data-row="1" data-col="2">90</td>
+                  <td data-row="1" data-col="3">40</td>
+                  <td data-row="1" data-col="4">60</td>
+                  <td data-row="1" data-col="5">40</td>
+                  <td data-row="1" data-col="6">75</td>
                 </tr>
                 <tr>
-                  <td>d2</td>
-                  <td>50</td>
-                  <td>70</td>
-                  <td>55</td>
-                  <td>65</td>
-                  <td>60</td>
+                  <td data-row="2" data-col="1">d2</td>
+                  <td data-row="2" data-col="2">50</td>
+                  <td data-row="2" data-col="3">70</td>
+                  <td data-row="2" data-col="4">55</td>
+                  <td data-row="2" data-col="5">65</td>
+                  <td data-row="2" data-col="6">60</td>
                 </tr>
                 <tr>
-                  <td>d3</td>
-                  <td>20</td>
-                  <td>80</td>
-                  <td>90</td>
-                  <td>75</td>
-                  <td>50</td>
+                  <td data-row="3" data-col="1">d3</td>
+                  <td data-row="3" data-col="2">20</td>
+                  <td data-row="3" data-col="3">80</td>
+                  <td data-row="3" data-col="4">90</td>
+                  <td data-row="3" data-col="5">75</td>
+                  <td data-row="3" data-col="6">50</td>
                 </tr>
                 <tr>
-                  <td>d4</td>
-                  <td>70</td>
-                  <td>45</td>
-                  <td>40</td>
-                  <td>95</td>
-                  <td>30</td>
+                  <td data-row="4" data-col="1">d4</td>
+                  <td data-row="4" data-col="2">70</td>
+                  <td data-row="4" data-col="3">45</td>
+                  <td data-row="4" data-col="4">40</td>
+                  <td data-row="4" data-col="5">95</td>
+                  <td data-row="4" data-col="6">30</td>
                 </tr>
         </tbody>
       </table>
@@ -366,8 +349,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell">
 <details class="code-fold">
 <summary>Código</summary>
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>sol_11 <span class="ot">=</span> <span class="fu">criterio.Wald</span>(tabla1, <span class="at">favorable =</span> T)</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>sol_11</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>sol_11 <span class="ot">=</span> <span class="fu">criterio.Wald</span>(tabla1, <span class="at">favorable =</span> T)</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>sol_11</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>$criterio
@@ -403,8 +386,8 @@ d2
 <div class="cell">
 <details class="code-fold">
 <summary>Código</summary>
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>sol_12 <span class="ot">=</span> <span class="fu">criterio.Optimista</span>(tabla1, <span class="at">favorable =</span> T)</span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>sol_12</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>sol_12 <span class="ot">=</span> <span class="fu">criterio.Optimista</span>(tabla1, <span class="at">favorable =</span> T)</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>sol_12</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>$criterio
@@ -441,8 +424,8 @@ d4
 <div class="cell">
 <details class="code-fold">
 <summary>Código</summary>
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>sol_13 <span class="ot">=</span> <span class="fu">criterio.Hurwicz</span>(tabla1, <span class="at">alfa =</span> <span class="fl">0.5</span>, <span class="at">favorable =</span> T)</span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>sol_13</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>sol_13 <span class="ot">=</span> <span class="fu">criterio.Hurwicz</span>(tabla1, <span class="at">alfa =</span> <span class="fl">0.5</span>, <span class="at">favorable =</span> T)</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>sol_13</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>$criterio
@@ -478,24 +461,24 @@ d1
 <div class="cell">
 <details class="code-fold">
 <summary>Código</summary>
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>alfa <span class="ot">=</span> <span class="fl">0.5</span></span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="fu">dibuja.criterio.Hurwicz</span>(tabla1, <span class="at">favorable =</span> T)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>alfa <span class="ot">=</span> <span class="fl">0.5</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="fu">dibuja.criterio.Hurwicz</span>(tabla1, <span class="at">favorable =</span> T)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="Resolución_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="Resolución_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
 <details class="code-fold">
 <summary>Código</summary>
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dibuja.criterio.Hurwicz_Intervalos</span>(tabla1, <span class="at">favorable =</span> T)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dibuja.criterio.Hurwicz_Intervalos</span>(tabla1, <span class="at">favorable =</span> T)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="Resolución_files/figure-html/unnamed-chunk-7-2.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="Resolución_files/figure-html/unnamed-chunk-7-2.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -520,8 +503,8 @@ Soluciones "( 0 , 0.333 )"     "2"
 <div class="cell">
 <details class="code-fold">
 <summary>Código</summary>
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>sol_14 <span class="ot">=</span> <span class="fu">criterio.Savage</span>(tabla1, <span class="at">favorable =</span> T)</span>
-<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>sol_14</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>sol_14 <span class="ot">=</span> <span class="fu">criterio.Savage</span>(tabla1, <span class="at">favorable =</span> T)</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>sol_14</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>$criterio
@@ -568,8 +551,8 @@ d2
 <div class="cell">
 <details class="code-fold">
 <summary>Código</summary>
-<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>sol_15 <span class="ot">=</span> <span class="fu">criterio.Laplace</span>(tabla1, <span class="at">favorable =</span> T)</span>
-<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>sol_15</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>sol_15 <span class="ot">=</span> <span class="fu">criterio.Laplace</span>(tabla1, <span class="at">favorable =</span> T)</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>sol_15</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>$criterio
@@ -605,8 +588,8 @@ d3
 <div class="cell">
 <details class="code-fold">
 <summary>Código</summary>
-<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>sol_16 <span class="ot">=</span> <span class="fu">criterio.PuntoIdeal</span>(tabla1, <span class="at">favorable =</span> T)</span>
-<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>sol_16</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>sol_16 <span class="ot">=</span> <span class="fu">criterio.PuntoIdeal</span>(tabla1, <span class="at">favorable =</span> T)</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>sol_16</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>$criterio
@@ -651,8 +634,8 @@ Es decir, asume una postura pesimista: se elige la opción que garantiza el meno
 <div class="cell">
 <details class="code-fold">
 <summary>Código</summary>
-<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>sol_21 <span class="ot">=</span> <span class="fu">criterio.Wald</span>(tabla1, <span class="at">favorable =</span> F)</span>
-<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>sol_21</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>sol_21 <span class="ot">=</span> <span class="fu">criterio.Wald</span>(tabla1, <span class="at">favorable =</span> F)</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>sol_21</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>$criterio
@@ -688,8 +671,8 @@ d2
 <div class="cell">
 <details class="code-fold">
 <summary>Código</summary>
-<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>sol_22 <span class="ot">=</span> <span class="fu">criterio.Optimista</span>(tabla1, <span class="at">favorable =</span> F)</span>
-<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>sol_22</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>sol_22 <span class="ot">=</span> <span class="fu">criterio.Optimista</span>(tabla1, <span class="at">favorable =</span> F)</span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>sol_22</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>$criterio
@@ -726,8 +709,8 @@ d3
 <div class="cell">
 <details class="code-fold">
 <summary>Código</summary>
-<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>sol_23 <span class="ot">=</span> <span class="fu">criterio.Hurwicz</span>(tabla1, <span class="at">alfa =</span> <span class="fl">0.5</span>, <span class="at">favorable =</span> F)</span>
-<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>sol_23</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>sol_23 <span class="ot">=</span> <span class="fu">criterio.Hurwicz</span>(tabla1, <span class="at">alfa =</span> <span class="fl">0.5</span>, <span class="at">favorable =</span> F)</span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>sol_23</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>$criterio
@@ -763,23 +746,23 @@ d3
 <div class="cell">
 <details class="code-fold">
 <summary>Código</summary>
-<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dibuja.criterio.Hurwicz</span>(tabla1, <span class="at">favorable =</span> F)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dibuja.criterio.Hurwicz</span>(tabla1, <span class="at">favorable =</span> F)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="Resolución_files/figure-html/unnamed-chunk-14-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="Resolución_files/figure-html/unnamed-chunk-14-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
 <details class="code-fold">
 <summary>Código</summary>
-<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dibuja.criterio.Hurwicz_Intervalos</span>(tabla1, <span class="at">favorable =</span> F)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dibuja.criterio.Hurwicz_Intervalos</span>(tabla1, <span class="at">favorable =</span> F)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="Resolución_files/figure-html/unnamed-chunk-14-2.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="Resolución_files/figure-html/unnamed-chunk-14-2.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -803,8 +786,8 @@ $IntervalosAlfa
 <div class="cell">
 <details class="code-fold">
 <summary>Código</summary>
-<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>sol_24 <span class="ot">=</span> <span class="fu">criterio.Savage</span>(tabla1, <span class="at">favorable =</span> F)</span>
-<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>sol_24</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>sol_24 <span class="ot">=</span> <span class="fu">criterio.Savage</span>(tabla1, <span class="at">favorable =</span> F)</span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>sol_24</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>$criterio
@@ -851,8 +834,8 @@ d2
 <div class="cell">
 <details class="code-fold">
 <summary>Código</summary>
-<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>sol_25 <span class="ot">=</span> <span class="fu">criterio.Laplace</span>(tabla1, <span class="at">favorable =</span> F)</span>
-<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>sol_25</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>sol_25 <span class="ot">=</span> <span class="fu">criterio.Laplace</span>(tabla1, <span class="at">favorable =</span> F)</span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>sol_25</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>$criterio
@@ -888,8 +871,8 @@ d4
 <div class="cell">
 <details class="code-fold">
 <summary>Código</summary>
-<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a>sol_26 <span class="ot">=</span> <span class="fu">criterio.PuntoIdeal</span>(tabla1, <span class="at">favorable =</span> F)</span>
-<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a>sol_26</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>sol_26 <span class="ot">=</span> <span class="fu">criterio.PuntoIdeal</span>(tabla1, <span class="at">favorable =</span> F)</span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a>sol_26</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>$criterio
@@ -940,8 +923,920 @@ d2
 <li><p>Problemas en videollamadas y reuniones importantes: 1000€</p></li>
 </ul>
 <p>Miguel quiere evaluar cuál sería el coste total del primer año, considerando que podría tener meses de alta demanda de trabajo o meses de baja demanda, y cuál sería la mejor compañía a elegir.</p>
+<div style="page-break-after: always;"></div>
+</section>
+<section id="problema-3" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Problema 3</h1>
+<p>Aplicar los criterios de decisión bajo incertidumbre a los problemas cuya matriz de valores numéricos vienen dadas en las tablas siguientes: Realizar tanto en situación favorable como desfavorable.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th>e1</th>
+<th>e2</th>
+<th>e3</th>
+<th>e4</th>
+<th>e5</th>
+<th>e6</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>d1</td>
+<td>740</td>
+<td>800</td>
+<td>500</td>
+<td>250</td>
+<td>690</td>
+<td>900</td>
+</tr>
+<tr class="even">
+<td>d2</td>
+<td>600</td>
+<td>600</td>
+<td>600</td>
+<td>600</td>
+<td>600</td>
+<td>600</td>
+</tr>
+<tr class="odd">
+<td>d3</td>
+<td>120</td>
+<td>50</td>
+<td>90</td>
+<td>300</td>
+<td>250</td>
+<td>10</td>
+</tr>
+<tr class="even">
+<td>d4</td>
+<td>450</td>
+<td>700</td>
+<td>900</td>
+<td>40</td>
+<td>25</td>
+<td>5</td>
+</tr>
+<tr class="odd">
+<td>d5</td>
+<td>150</td>
+<td>200</td>
+<td>500</td>
+<td>220</td>
+<td>430</td>
+<td>400</td>
+</tr>
+</tbody>
+</table>
+<section id="creación-de-la-matriz-1" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="creación-de-la-matriz-1"><span class="header-section-number">4.1</span> Creación de la matriz</h2>
+<div class="cell">
+<details class="code-fold">
+<summary>Código</summary>
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>tb01a <span class="ot">=</span> <span class="fu">crea.tablaX</span>(<span class="fu">c</span>(<span class="dv">740</span>,<span class="dv">800</span>,<span class="dv">500</span>,<span class="dv">250</span>,<span class="dv">690</span>,<span class="dv">900</span>,</span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>                      <span class="dv">600</span>,<span class="dv">600</span>,<span class="dv">600</span>,<span class="dv">600</span>,<span class="dv">600</span>,<span class="dv">600</span>,</span>
+<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a>                      <span class="dv">120</span>,<span class="dv">50</span>,<span class="dv">90</span>,<span class="dv">300</span>,<span class="dv">250</span>,<span class="dv">10</span>,</span>
+<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a>                      <span class="dv">450</span>,<span class="dv">700</span>,<span class="dv">900</span>,<span class="dv">40</span>,<span class="dv">25</span>,<span class="dv">5</span>,</span>
+<span id="cb34-5"><a href="#cb34-5" aria-hidden="true" tabindex="-1"></a>                      <span class="dv">150</span>,<span class="dv">200</span>,<span class="dv">500</span>,<span class="dv">220</span>,<span class="dv">430</span>,<span class="dv">400</span>),<span class="at">numalternativas=</span><span class="dv">5</span>,<span class="at">numestados=</span><span class="dv">6</span>)</span>
+<span id="cb34-6"><a href="#cb34-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-7"><a href="#cb34-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-8"><a href="#cb34-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Convertimos la tabla en un data.frame</span></span>
+<span id="cb34-9"><a href="#cb34-9" aria-hidden="true" tabindex="-1"></a>tabla_3 <span class="ot">=</span> <span class="fu">as.data.frame</span>(tb01a)</span>
+<span id="cb34-10"><a href="#cb34-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-11"><a href="#cb34-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Presentamos la tabla de valores</span></span>
+<span id="cb34-12"><a href="#cb34-12" aria-hidden="true" tabindex="-1"></a><span class="fu">tt</span>(tabla_3, <span class="at">rownames =</span> T)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<!-- preamble start -->
+
+    <script src="https://cdn.jsdelivr.net/gh/vincentarelbundock/tinytable@main/inst/tinytable.js"></script>
+
+    <script>
+      // Create table-specific functions using external factory
+      const tableFns_imbr82mvi76b4oft371k = TinyTable.createTableFunctions("tinytable_imbr82mvi76b4oft371k");
+      // tinytable span after
+      window.addEventListener('load', function () {
+          var cellsToStyle = [
+            // tinytable style arrays after
+          { positions: [ { i: '5', j: 1 }, { i: '5', j: 2 }, { i: '5', j: 3 }, { i: '5', j: 4 }, { i: '5', j: 5 }, { i: '5', j: 6 }, { i: '5', j: 7 } ], css_id: 'tinytable_css_ou2l7dea8en36z7dlyo3',}, 
+          { positions: [ { i: '0', j: 1 }, { i: '0', j: 2 }, { i: '0', j: 3 }, { i: '0', j: 4 }, { i: '0', j: 5 }, { i: '0', j: 6 }, { i: '0', j: 7 } ], css_id: 'tinytable_css_2wwhb6wpx6p01camlih0',}, 
+          ];
+
+          // Loop over the arrays to style the cells
+          cellsToStyle.forEach(function (group) {
+              group.positions.forEach(function (cell) {
+                  tableFns_imbr82mvi76b4oft371k.styleCell(cell.i, cell.j, group.css_id);
+              });
+          });
+      });
+    </script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/vincentarelbundock/tinytable@main/inst/tinytable.css">
+    <style>
+    /* tinytable css entries after */
+    #tinytable_imbr82mvi76b4oft371k td.tinytable_css_ou2l7dea8en36z7dlyo3, #tinytable_imbr82mvi76b4oft371k th.tinytable_css_ou2l7dea8en36z7dlyo3 {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 0; --line-color-bottom: black; --line-color-left: black; --line-color-right: black; --line-color-top: black; --line-width-bottom: 0.1em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.1em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%;  }
+    #tinytable_imbr82mvi76b4oft371k td.tinytable_css_2wwhb6wpx6p01camlih0, #tinytable_imbr82mvi76b4oft371k th.tinytable_css_2wwhb6wpx6p01camlih0 {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 1; --line-color-bottom: black; --line-color-left: black; --line-color-right: black; --line-color-top: black; --line-width-bottom: 0.05em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.1em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%;  }
+    </style>
+    <div class="container">
+      <table class="tinytable" id="tinytable_imbr82mvi76b4oft371k" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
+        
+        <thead>
+              <tr>
+                <th scope="col" data-row="0" data-col="1">rowname</th>
+                <th scope="col" data-row="0" data-col="2">e1</th>
+                <th scope="col" data-row="0" data-col="3">e2</th>
+                <th scope="col" data-row="0" data-col="4">e3</th>
+                <th scope="col" data-row="0" data-col="5">e4</th>
+                <th scope="col" data-row="0" data-col="6">e5</th>
+                <th scope="col" data-row="0" data-col="7">e6</th>
+              </tr>
+        </thead>
+        
+        <tbody>
+                <tr>
+                  <td data-row="1" data-col="1">d1</td>
+                  <td data-row="1" data-col="2">740</td>
+                  <td data-row="1" data-col="3">800</td>
+                  <td data-row="1" data-col="4">500</td>
+                  <td data-row="1" data-col="5">250</td>
+                  <td data-row="1" data-col="6">690</td>
+                  <td data-row="1" data-col="7">900</td>
+                </tr>
+                <tr>
+                  <td data-row="2" data-col="1">d2</td>
+                  <td data-row="2" data-col="2">600</td>
+                  <td data-row="2" data-col="3">600</td>
+                  <td data-row="2" data-col="4">600</td>
+                  <td data-row="2" data-col="5">600</td>
+                  <td data-row="2" data-col="6">600</td>
+                  <td data-row="2" data-col="7">600</td>
+                </tr>
+                <tr>
+                  <td data-row="3" data-col="1">d3</td>
+                  <td data-row="3" data-col="2">120</td>
+                  <td data-row="3" data-col="3">50</td>
+                  <td data-row="3" data-col="4">90</td>
+                  <td data-row="3" data-col="5">300</td>
+                  <td data-row="3" data-col="6">250</td>
+                  <td data-row="3" data-col="7">10</td>
+                </tr>
+                <tr>
+                  <td data-row="4" data-col="1">d4</td>
+                  <td data-row="4" data-col="2">450</td>
+                  <td data-row="4" data-col="3">700</td>
+                  <td data-row="4" data-col="4">900</td>
+                  <td data-row="4" data-col="5">40</td>
+                  <td data-row="4" data-col="6">25</td>
+                  <td data-row="4" data-col="7">5</td>
+                </tr>
+                <tr>
+                  <td data-row="5" data-col="1">d5</td>
+                  <td data-row="5" data-col="2">150</td>
+                  <td data-row="5" data-col="3">200</td>
+                  <td data-row="5" data-col="4">500</td>
+                  <td data-row="5" data-col="5">220</td>
+                  <td data-row="5" data-col="6">430</td>
+                  <td data-row="5" data-col="7">400</td>
+                </tr>
+        </tbody>
+      </table>
+    </div>
+<!-- hack to avoid NA insertion in last line -->
+</div>
+</div>
+</section>
+<section id="solución-de-beneficios" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="solución-de-beneficios"><span class="header-section-number">4.2</span> Solución de beneficios</h2>
+<p>Veámos las soluciones según los distintos criterios:</p>
+<section id="criterio-de-wald" class="level3" data-number="4.2.1">
+<h3 data-number="4.2.1" class="anchored" data-anchor-id="criterio-de-wald"><span class="header-section-number">4.2.1</span> Criterio de Wald:</h3>
+<div class="cell">
+<details class="code-fold">
+<summary>Código</summary>
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="fu">criterio.Wald</span>(tb01a)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>$criterio
+[1] "Wald"
+
+$metodo
+[1] "favorable"
+
+$tablaX
+    e1  e2  e3  e4  e5  e6
+d1 740 800 500 250 690 900
+d2 600 600 600 600 600 600
+d3 120  50  90 300 250  10
+d4 450 700 900  40  25   5
+d5 150 200 500 220 430 400
+
+$ValorAlternativas
+ d1  d2  d3  d4  d5 
+250 600  10   5 150 
+
+$ValorOptimo
+[1] 600
+
+$AlternativaOptima
+d2 
+ 2 </code></pre>
+</div>
+</div>
+<p>El criterio de Wald nos indica que la mejor decisión es la alternativa d2 con un valor optimo de 600.</p>
+</section>
+<section id="método-optimista" class="level3" data-number="4.2.2">
+<h3 data-number="4.2.2" class="anchored" data-anchor-id="método-optimista"><span class="header-section-number">4.2.2</span> Método optimista:</h3>
+<div class="cell">
+<details class="code-fold">
+<summary>Código</summary>
+<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="fu">criterio.Optimista</span>(tb01a)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>$criterio
+[1] "Optimista"
+
+$metodo
+[1] "favorable"
+
+$tablaX
+    e1  e2  e3  e4  e5  e6
+d1 740 800 500 250 690 900
+d2 600 600 600 600 600 600
+d3 120  50  90 300 250  10
+d4 450 700 900  40  25   5
+d5 150 200 500 220 430 400
+
+$ValorAlternativas
+ d1  d2  d3  d4  d5 
+900 600 300 900 500 
+
+$ValorOptimo
+[1] 900
+
+$AlternativaOptima
+d1 d4 
+ 1  4 </code></pre>
+</div>
+</div>
+<p>El criterio optimista nos indica que la mejor decisión son las alternativas d1 o d4 con un valor optimo de 900.</p>
+</section>
+<section id="criterio-de-hurwicz-2" class="level3" data-number="4.2.3">
+<h3 data-number="4.2.3" class="anchored" data-anchor-id="criterio-de-hurwicz-2"><span class="header-section-number">4.2.3</span> Criterio de Hurwicz:</h3>
+<div class="cell">
+<details class="code-fold">
+<summary>Código</summary>
+<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="fu">criterio.Hurwicz</span>(tb01a,<span class="at">alfa=</span><span class="fl">0.5</span>)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>$criterio
+[1] "Hurwicz"
+
+$alfa
+[1] 0.5
+
+$metodo
+[1] "favorable"
+
+$tablaX
+    e1  e2  e3  e4  e5  e6
+d1 740 800 500 250 690 900
+d2 600 600 600 600 600 600
+d3 120  50  90 300 250  10
+d4 450 700 900  40  25   5
+d5 150 200 500 220 430 400
+
+$ValorAlternativas
+   d1    d2    d3    d4    d5 
+575.0 600.0 155.0 452.5 325.0 
+
+$ValorOptimo
+[1] 600
+
+$AlternativaOptima
+d2 
+ 2 </code></pre>
+</div>
+</div>
+<p>El criterio de Hurwicz nos indica que la mejor decisión para alpha=0.5 es la alternativa d2 con un valor optimo de 600.</p>
+<p>Además, moviendo el alpha:</p>
+<div class="cell">
+<details class="code-fold">
+<summary>Código</summary>
+<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dibuja.criterio.Hurwicz_Intervalos</span>(tb01a,T,T)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Resolución_files/figure-html/unnamed-chunk-22-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$AltOptimas
+[1] 2 1
+
+$PuntosDeCorte
+[1] 0.538
+
+$IntervalosAlfa
+     Intervalo       Alternativa
+[1,] "( 0 , 0.538 )" "2"        
+[2,] "( 0.538 , 1 )" "1"        </code></pre>
+</div>
+</div>
+<p>Nos indica que para alpha entre 0 y 0.538 la mejor decisión es d2 y para alpha entre 0.538 y 1, la mejor decisión es d1.</p>
+</section>
+<section id="criterio-de-savage-2" class="level3" data-number="4.2.4">
+<h3 data-number="4.2.4" class="anchored" data-anchor-id="criterio-de-savage-2"><span class="header-section-number">4.2.4</span> Criterio de Savage:</h3>
+<div class="cell">
+<details class="code-fold">
+<summary>Código</summary>
+<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a><span class="fu">criterio.Savage</span>(tb01a)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>$criterio
+[1] "Savage"
+
+$metodo
+[1] "favorable"
+
+$tablaX
+    e1  e2  e3  e4  e5  e6
+d1 740 800 500 250 690 900
+d2 600 600 600 600 600 600
+d3 120  50  90 300 250  10
+d4 450 700 900  40  25   5
+d5 150 200 500 220 430 400
+
+$Mejores
+ e1  e2  e3  e4  e5  e6 
+740 800 900 600 690 900 
+
+$Pesos
+    e1  e2  e3  e4  e5  e6
+d1   0   0 400 350   0   0
+d2 140 200 300   0  90 300
+d3 620 750 810 300 440 890
+d4 290 100   0 560 665 895
+d5 590 600 400 380 260 500
+
+$ValorAlternativas
+ d1  d2  d3  d4  d5 
+400 300 890 895 600 
+
+$ValorOptimo
+[1] 300
+
+$AlternativaOptima
+d2 
+ 2 </code></pre>
+</div>
+</div>
+<p>El criterio de Savage nos indica que la mejor decisión es la alternativa d2 con un valor optimo de 300.</p>
+</section>
+<section id="criterio-de-laplace-2" class="level3" data-number="4.2.5">
+<h3 data-number="4.2.5" class="anchored" data-anchor-id="criterio-de-laplace-2"><span class="header-section-number">4.2.5</span> Criterio de Laplace:</h3>
+<div class="cell">
+<details class="code-fold">
+<summary>Código</summary>
+<div class="sourceCode cell-code" id="cb45"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a><span class="fu">criterio.Laplace</span>(tb01a)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>$criterio
+[1] "Laplace"
+
+$metodo
+[1] "favorable"
+
+$tablaX
+    e1  e2  e3  e4  e5  e6
+d1 740 800 500 250 690 900
+d2 600 600 600 600 600 600
+d3 120  50  90 300 250  10
+d4 450 700 900  40  25   5
+d5 150 200 500 220 430 400
+
+$ValorAlternativas
+      d1       d2       d3       d4       d5 
+646.6667 600.0000 136.6667 353.3333 316.6667 
+
+$ValorOptimo
+[1] 646.6667
+
+$AlternativaOptima
+d1 
+ 1 </code></pre>
+</div>
+</div>
+<p>El criterio de Laplace nos indica que la mejor decisión es la alternativa d1 con un valor optimo de 646.6667.</p>
+</section>
+<section id="criterio-del-punto-ideal-2" class="level3" data-number="4.2.6">
+<h3 data-number="4.2.6" class="anchored" data-anchor-id="criterio-del-punto-ideal-2"><span class="header-section-number">4.2.6</span> Criterio del Punto Ideal:</h3>
+<div class="cell">
+<details class="code-fold">
+<summary>Código</summary>
+<div class="sourceCode cell-code" id="cb47"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a><span class="fu">criterio.PuntoIdeal</span>(tb01a)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>$criterio
+[1] "Punto Ideal"
+
+$metodo
+[1] "favorable"
+
+$tablaX
+    e1  e2  e3  e4  e5  e6
+d1 740 800 500 250 690 900
+d2 600 600 600 600 600 600
+d3 120  50  90 300 250  10
+d4 450 700 900  40  25   5
+d5 150 200 500 220 430 400
+
+$Mejores
+ e1  e2  e3  e4  e5  e6 
+740 800 900 600 690 900 
+
+$ValorAlternativas
+       d1        d2        d3        d4        d5 
+ 531.5073  497.6947 1636.6735 1284.8930 1153.2996 
+
+$ValorOptimo
+[1] 497.6947
+
+$AlternativaOptima
+d2 
+ 2 </code></pre>
+</div>
+</div>
+<p>El criterio del Punto Ideal nos indica que la mejor decisión es la alternativa d2 con un valor optimo de 497.6947.</p>
+<p>CONCLUSIÓN:</p>
+<p>En situación favorable, según los criterios de decisión bajo incertidumbre, las mejores decisiones son la alternativa d2 (Criterio de Wald, Hurwicz, Savage y Punto Ideal) o la alternativa d1 (Criterio optimista y Laplace).</p>
+<p>Si me tuviera que quedar con una única alternativa, elegiría la alternativa d2, ya que es la que más veces aparece como mejor decisión según los distintos criterios.</p>
+<div style="page-break-after: always;"></div>
+</section>
+</section>
+<section id="solución-de-costes" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="solución-de-costes"><span class="header-section-number">4.3</span> Solución de costes:</h2>
+<section id="criterio-de-wald-1" class="level3" data-number="4.3.1">
+<h3 data-number="4.3.1" class="anchored" data-anchor-id="criterio-de-wald-1"><span class="header-section-number">4.3.1</span> Criterio de Wald:</h3>
+<div class="cell">
+<details class="code-fold">
+<summary>Código</summary>
+<div class="sourceCode cell-code" id="cb49"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a><span class="fu">criterio.Wald</span>(tb01a,<span class="at">favorable =</span> <span class="cn">FALSE</span>)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>$criterio
+[1] "Wald"
+
+$metodo
+[1] "desfavorable"
+
+$tablaX
+    e1  e2  e3  e4  e5  e6
+d1 740 800 500 250 690 900
+d2 600 600 600 600 600 600
+d3 120  50  90 300 250  10
+d4 450 700 900  40  25   5
+d5 150 200 500 220 430 400
+
+$ValorAlternativas
+ d1  d2  d3  d4  d5 
+900 600 300 900 500 
+
+$ValorOptimo
+[1] 300
+
+$AlternativaOptima
+d3 
+ 3 </code></pre>
+</div>
+</div>
+<p>El criterio de Wald nos indica que la mejor decisión es la alternativa d3 con un valor optimo de 300.</p>
+</section>
+<section id="método-optimista-1" class="level3" data-number="4.3.2">
+<h3 data-number="4.3.2" class="anchored" data-anchor-id="método-optimista-1"><span class="header-section-number">4.3.2</span> Método optimista:</h3>
+<div class="cell">
+<details class="code-fold">
+<summary>Código</summary>
+<div class="sourceCode cell-code" id="cb51"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a><span class="fu">criterio.Optimista</span>(tb01a,<span class="at">favorable =</span> <span class="cn">FALSE</span>)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>$criterio
+[1] "Optimista"
+
+$metodo
+[1] "desfavorable"
+
+$tablaX
+    e1  e2  e3  e4  e5  e6
+d1 740 800 500 250 690 900
+d2 600 600 600 600 600 600
+d3 120  50  90 300 250  10
+d4 450 700 900  40  25   5
+d5 150 200 500 220 430 400
+
+$ValorAlternativas
+ d1  d2  d3  d4  d5 
+250 600  10   5 150 
+
+$ValorOptimo
+[1] 5
+
+$AlternativaOptima
+d4 
+ 4 </code></pre>
+</div>
+</div>
+<p>El criterio optimista nos indica que la mejor decisión es la alternativa d4 con un valor optimo de 5.</p>
+</section>
+<section id="criterio-de-hurwicz-3" class="level3" data-number="4.3.3">
+<h3 data-number="4.3.3" class="anchored" data-anchor-id="criterio-de-hurwicz-3"><span class="header-section-number">4.3.3</span> Criterio de Hurwicz:</h3>
+<div class="cell">
+<details class="code-fold">
+<summary>Código</summary>
+<div class="sourceCode cell-code" id="cb53"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a><span class="fu">criterio.Hurwicz</span>(tb01a,<span class="at">alfa=</span><span class="fl">0.5</span>,<span class="at">favorable =</span> <span class="cn">FALSE</span>)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>$criterio
+[1] "Hurwicz"
+
+$alfa
+[1] 0.5
+
+$metodo
+[1] "desfavorable"
+
+$tablaX
+    e1  e2  e3  e4  e5  e6
+d1 740 800 500 250 690 900
+d2 600 600 600 600 600 600
+d3 120  50  90 300 250  10
+d4 450 700 900  40  25   5
+d5 150 200 500 220 430 400
+
+$ValorAlternativas
+   d1    d2    d3    d4    d5 
+575.0 600.0 155.0 452.5 325.0 
+
+$ValorOptimo
+[1] 155
+
+$AlternativaOptima
+d3 
+ 3 </code></pre>
+</div>
+</div>
+<p>El criterio de Hurwicz nos indica que la mejor decisión para alpha=0.5 es la alternativa d3 con un valor optimo de 155.</p>
+<p>Además, moviendo el alpha:</p>
+<div class="cell">
+<details class="code-fold">
+<summary>Código</summary>
+<div class="sourceCode cell-code" id="cb55"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb55-1"><a href="#cb55-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dibuja.criterio.Hurwicz_Intervalos</span>(tb01a,F,T)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Resolución_files/figure-html/unnamed-chunk-29-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$AltOptimas
+[1] 3 4
+
+$PuntosDeCorte
+[1] 0.992
+
+$IntervalosAlfa
+     Intervalo       Alternativa
+[1,] "( 0 , 0.992 )" "3"        
+[2,] "( 0.992 , 1 )" "4"        </code></pre>
+</div>
+</div>
+<p>Nos indica que para alpha entre 0 y 0.992 la mejor decisión es d3 y para alpha entre 0.992 y 1, la mejor decisión es d4.</p>
+</section>
+<section id="criterio-de-savage-3" class="level3" data-number="4.3.4">
+<h3 data-number="4.3.4" class="anchored" data-anchor-id="criterio-de-savage-3"><span class="header-section-number">4.3.4</span> Criterio de Savage:</h3>
+<div class="cell">
+<details class="code-fold">
+<summary>Código</summary>
+<div class="sourceCode cell-code" id="cb57"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb57-1"><a href="#cb57-1" aria-hidden="true" tabindex="-1"></a><span class="fu">criterio.Savage</span>(tb01a,<span class="at">favorable =</span> <span class="cn">FALSE</span>)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>$criterio
+[1] "Savage"
+
+$metodo
+[1] "desfavorable"
+
+$tablaX
+    e1  e2  e3  e4  e5  e6
+d1 740 800 500 250 690 900
+d2 600 600 600 600 600 600
+d3 120  50  90 300 250  10
+d4 450 700 900  40  25   5
+d5 150 200 500 220 430 400
+
+$Mejores
+ e1  e2  e3  e4  e5  e6 
+120  50  90  40  25   5 
+
+$Pesos
+    e1  e2  e3  e4  e5  e6
+d1 620 750 410 210 665 895
+d2 480 550 510 560 575 595
+d3   0   0   0 260 225   5
+d4 330 650 810   0   0   0
+d5  30 150 410 180 405 395
+
+$ValorAlternativas
+ d1  d2  d3  d4  d5 
+895 595 260 810 410 
+
+$ValorOptimo
+[1] 260
+
+$AlternativaOptima
+d3 
+ 3 </code></pre>
+</div>
+</div>
+<p>El criterio de Savage nos indica que la mejor decisión es la alternativa d3 con un valor optimo de 260.</p>
+</section>
+<section id="criterio-de-laplace-3" class="level3" data-number="4.3.5">
+<h3 data-number="4.3.5" class="anchored" data-anchor-id="criterio-de-laplace-3"><span class="header-section-number">4.3.5</span> Criterio de Laplace:</h3>
+<div class="cell">
+<details class="code-fold">
+<summary>Código</summary>
+<div class="sourceCode cell-code" id="cb59"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb59-1"><a href="#cb59-1" aria-hidden="true" tabindex="-1"></a><span class="fu">criterio.Laplace</span>(tb01a,<span class="at">favorable =</span> <span class="cn">FALSE</span>)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>$criterio
+[1] "Laplace"
+
+$metodo
+[1] "desfavorable"
+
+$tablaX
+    e1  e2  e3  e4  e5  e6
+d1 740 800 500 250 690 900
+d2 600 600 600 600 600 600
+d3 120  50  90 300 250  10
+d4 450 700 900  40  25   5
+d5 150 200 500 220 430 400
+
+$ValorAlternativas
+      d1       d2       d3       d4       d5 
+646.6667 600.0000 136.6667 353.3333 316.6667 
+
+$ValorOptimo
+[1] 136.6667
+
+$AlternativaOptima
+d3 
+ 3 </code></pre>
+</div>
+</div>
+<p>El criterio de Laplace nos indica que la mejor decisión es la alternativa d1 con un valor optimo de 646.6667.</p>
+</section>
+<section id="criterio-del-punto-ideal-3" class="level3" data-number="4.3.6">
+<h3 data-number="4.3.6" class="anchored" data-anchor-id="criterio-del-punto-ideal-3"><span class="header-section-number">4.3.6</span> Criterio del Punto Ideal:</h3>
+<div class="cell">
+<details class="code-fold">
+<summary>Código</summary>
+<div class="sourceCode cell-code" id="cb61"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb61-1"><a href="#cb61-1" aria-hidden="true" tabindex="-1"></a><span class="fu">criterio.PuntoIdeal</span>(tb01a,<span class="at">favorable =</span> <span class="cn">FALSE</span>)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>$criterio
+[1] "Punto Ideal"
+
+$metodo
+[1] "desfavorable"
+
+$tablaX
+    e1  e2  e3  e4  e5  e6
+d1 740 800 500 250 690 900
+d2 600 600 600 600 600 600
+d3 120  50  90 300 250  10
+d4 450 700 900  40  25   5
+d5 150 200 500 220 430 400
+
+$Mejores
+ e1  e2  e3  e4  e5  e6 
+120  50  90  40  25   5 
+
+$ValorAlternativas
+       d1        d2        d3        d4        d5 
+1549.9516 1338.3759  343.8750 1089.7247  737.5297 
+
+$ValorOptimo
+[1] 343.875
+
+$AlternativaOptima
+d3 
+ 3 </code></pre>
+</div>
+</div>
+<p>El criterio del Punto Ideal nos indica que la mejor decisión es la alternativa d3 con un valor optimo de 343.875.</p>
+<p>CONCLUSIÓN:</p>
+<p>En situación de costes, según los criterios de decisión bajo incertidumbre, las mejores decisiones son la alternativa d3 (Criterio de Wald, Hurwicz, Savage y Punto Ideal), la alternativa d4 (Criterio optimista) o la alternativa d1 (Criterio de Laplace).</p>
+<p>Si me tuviera que quedar con una única alternativa, elegiría la alternativa d3, ya que es la que más veces aparece como mejor decisión según los distintos criterios.</p>
+<div style="page-break-after: always;"></div>
+</section>
+</section>
+</section>
+<section id="problema-4" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Problema 4</h1>
+<p>Lucía y Marco tienen que mudarse este sábado y no se ponen de acuerdo sobre cómo hacerlo. Barajan estas opciones: Opción A: Alquilar furgoneta y hacerlo ellos • Pack de 3 horas de furgoneta con km incluidos: 110 €. • Combustible: 12 €. • Hora extra: 35 €. • Si llueve, comprarían fundas/plásticos 8 €. • Si el ascensor del piso nuevo falla, necesitarían 3 horas extra y pedir ayuda puntual 30 € para subir los muebles pesados.</p>
+<p>Opción B: Empresa “AhorraMudanzas” • Tarifa base 2 horas: 130 € (furgón y carga/descarga básicos). • Hora extra: 35 €. • Con lluvia o tráfico, suelen tardar 1 hora más. • Si el ascensor está averiado, estiman 2 horas extra y recargo 20 € por subir por escaleras.</p>
+<p>Opción C: Empresa “PremiumBox” • Tarifa plana hasta 4 horas: 220 € • Hora extra a partir de la 5.ª: 30 €. • Con lluvia o tráfico normalmente no hay recargos. • Si el ascensor falla, prevén 1 hora extra.</p>
+<p>Estados de la naturaleza:</p>
+<p>Mudanza fluida (sin lluvia/tráfico y ascensores funcionando).</p>
+<p>Lluvia o tráfico moderado.</p>
+<p>Ascensor averiado.</p>
+<p>SOLUCIÓN:</p>
+<p>Estamos ante un problema de decisión con un solo decisor. Puesto que lo que queremos es minimizar el gasto de la mudanza, nos encontramos con un modelo de costos.</p>
+<p>Se nos presentan 3 alternativas:</p>
+<ul>
+<li>d1: Opción A: Alquilar furgoneta y hacerlo ellos.</li>
+<li>d2: Opción B: Empresa “AhorraMudanzas”.</li>
+<li>d3: Opción C: Empresa “PremiumBox”.</li>
+</ul>
+<p>Los estados de la naturaleza son:</p>
+<ul>
+<li>e1: Mudanza fluida (sin lluvia/tráfico y ascensores funcionando).</li>
+<li>e2: Lluvia o tráfico moderado, pero con ascensores en orden.</li>
+<li>e3: Ascensor averiado, pero sin lluvia ni tráfico.</li>
+</ul>
+<section id="valoraciones" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="valoraciones"><span class="header-section-number">5.1</span> Valoraciones:</h2>
+<p>Para e1:</p>
+<div class="cell">
+<details class="code-fold">
+<summary>Código</summary>
+<div class="sourceCode cell-code" id="cb63"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb63-1"><a href="#cb63-1" aria-hidden="true" tabindex="-1"></a>m11 <span class="ot">=</span> <span class="dv">110</span><span class="sc">+</span><span class="dv">12</span></span>
+<span id="cb63-2"><a href="#cb63-2" aria-hidden="true" tabindex="-1"></a>m21 <span class="ot">=</span> <span class="dv">130</span></span>
+<span id="cb63-3"><a href="#cb63-3" aria-hidden="true" tabindex="-1"></a>m31 <span class="ot">=</span> <span class="dv">220</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<p>Para e2:</p>
+<div class="cell">
+<details class="code-fold">
+<summary>Código</summary>
+<div class="sourceCode cell-code" id="cb64"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb64-1"><a href="#cb64-1" aria-hidden="true" tabindex="-1"></a>m12 <span class="ot">=</span> <span class="dv">110</span><span class="sc">+</span><span class="dv">12</span><span class="sc">+</span><span class="dv">8</span></span>
+<span id="cb64-2"><a href="#cb64-2" aria-hidden="true" tabindex="-1"></a>m22 <span class="ot">=</span> <span class="dv">130</span><span class="sc">+</span><span class="dv">35</span></span>
+<span id="cb64-3"><a href="#cb64-3" aria-hidden="true" tabindex="-1"></a>m32 <span class="ot">=</span> <span class="dv">220</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<p>Para e3:</p>
+<div class="cell">
+<details class="code-fold">
+<summary>Código</summary>
+<div class="sourceCode cell-code" id="cb65"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb65-1"><a href="#cb65-1" aria-hidden="true" tabindex="-1"></a>m13 <span class="ot">=</span> <span class="dv">110</span><span class="sc">+</span><span class="dv">12</span><span class="sc">+</span><span class="dv">30</span><span class="sc">+</span><span class="dv">3</span><span class="sc">*</span><span class="dv">35</span></span>
+<span id="cb65-2"><a href="#cb65-2" aria-hidden="true" tabindex="-1"></a>m23 <span class="ot">=</span> <span class="dv">130</span><span class="sc">+</span><span class="dv">20</span><span class="sc">+</span><span class="dv">2</span><span class="sc">*</span><span class="dv">35</span></span>
+<span id="cb65-3"><a href="#cb65-3" aria-hidden="true" tabindex="-1"></a>m33 <span class="ot">=</span> <span class="dv">220</span><span class="sc">+</span><span class="dv">30</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+</section>
+<section id="creación-de-la-matriz-2" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="creación-de-la-matriz-2"><span class="header-section-number">5.2</span> Creación de la matriz</h2>
+<p>Construimos la tabla de decisiones:</p>
+<div class="cell">
+<details class="code-fold">
+<summary>Código</summary>
+<div class="sourceCode cell-code" id="cb66"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb66-1"><a href="#cb66-1" aria-hidden="true" tabindex="-1"></a>tb02 <span class="ot">=</span> <span class="fu">crea.tablaX</span>(<span class="fu">c</span>(m11,m12,m13,</span>
+<span id="cb66-2"><a href="#cb66-2" aria-hidden="true" tabindex="-1"></a>                      m21,m22,m23,</span>
+<span id="cb66-3"><a href="#cb66-3" aria-hidden="true" tabindex="-1"></a>                      m31,m32,m33),<span class="at">numalternativas=</span><span class="dv">3</span>,<span class="at">numestados=</span><span class="dv">3</span>)</span>
+<span id="cb66-4"><a href="#cb66-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb66-5"><a href="#cb66-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb66-6"><a href="#cb66-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Convertimos la tabla en un data.frame</span></span>
+<span id="cb66-7"><a href="#cb66-7" aria-hidden="true" tabindex="-1"></a>tabla_4 <span class="ot">=</span> <span class="fu">as.data.frame</span>(tb02)</span>
+<span id="cb66-8"><a href="#cb66-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb66-9"><a href="#cb66-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Presentamos la tabla de valores</span></span>
+<span id="cb66-10"><a href="#cb66-10" aria-hidden="true" tabindex="-1"></a><span class="fu">tt</span>(tabla_4, <span class="at">rownames =</span> T)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<!-- preamble start -->
+
+    <script src="https://cdn.jsdelivr.net/gh/vincentarelbundock/tinytable@main/inst/tinytable.js"></script>
+
+    <script>
+      // Create table-specific functions using external factory
+      const tableFns_a4ogq9lk37tyojoy0nbh = TinyTable.createTableFunctions("tinytable_a4ogq9lk37tyojoy0nbh");
+      // tinytable span after
+      window.addEventListener('load', function () {
+          var cellsToStyle = [
+            // tinytable style arrays after
+          { positions: [ { i: '3', j: 1 }, { i: '3', j: 2 }, { i: '3', j: 3 }, { i: '3', j: 4 } ], css_id: 'tinytable_css_ty4fdm2yn8m1xt48ma8l',}, 
+          { positions: [ { i: '0', j: 1 }, { i: '0', j: 2 }, { i: '0', j: 3 }, { i: '0', j: 4 } ], css_id: 'tinytable_css_tepunb6wt0a3h9tfl550',}, 
+          ];
+
+          // Loop over the arrays to style the cells
+          cellsToStyle.forEach(function (group) {
+              group.positions.forEach(function (cell) {
+                  tableFns_a4ogq9lk37tyojoy0nbh.styleCell(cell.i, cell.j, group.css_id);
+              });
+          });
+      });
+    </script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/vincentarelbundock/tinytable@main/inst/tinytable.css">
+    <style>
+    /* tinytable css entries after */
+    #tinytable_a4ogq9lk37tyojoy0nbh td.tinytable_css_ty4fdm2yn8m1xt48ma8l, #tinytable_a4ogq9lk37tyojoy0nbh th.tinytable_css_ty4fdm2yn8m1xt48ma8l {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 0; --line-color-bottom: black; --line-color-left: black; --line-color-right: black; --line-color-top: black; --line-width-bottom: 0.1em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.1em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%;  }
+    #tinytable_a4ogq9lk37tyojoy0nbh td.tinytable_css_tepunb6wt0a3h9tfl550, #tinytable_a4ogq9lk37tyojoy0nbh th.tinytable_css_tepunb6wt0a3h9tfl550 {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 1; --line-color-bottom: black; --line-color-left: black; --line-color-right: black; --line-color-top: black; --line-width-bottom: 0.05em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.1em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%;  }
+    </style>
+    <div class="container">
+      <table class="tinytable" id="tinytable_a4ogq9lk37tyojoy0nbh" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
+        
+        <thead>
+              <tr>
+                <th scope="col" data-row="0" data-col="1">rowname</th>
+                <th scope="col" data-row="0" data-col="2">e1</th>
+                <th scope="col" data-row="0" data-col="3">e2</th>
+                <th scope="col" data-row="0" data-col="4">e3</th>
+              </tr>
+        </thead>
+        
+        <tbody>
+                <tr>
+                  <td data-row="1" data-col="1">d1</td>
+                  <td data-row="1" data-col="2">122</td>
+                  <td data-row="1" data-col="3">130</td>
+                  <td data-row="1" data-col="4">257</td>
+                </tr>
+                <tr>
+                  <td data-row="2" data-col="1">d2</td>
+                  <td data-row="2" data-col="2">130</td>
+                  <td data-row="2" data-col="3">165</td>
+                  <td data-row="2" data-col="4">220</td>
+                </tr>
+                <tr>
+                  <td data-row="3" data-col="1">d3</td>
+                  <td data-row="3" data-col="2">220</td>
+                  <td data-row="3" data-col="3">220</td>
+                  <td data-row="3" data-col="4">250</td>
+                </tr>
+        </tbody>
+      </table>
+    </div>
+<!-- hack to avoid NA insertion in last line -->
+</div>
+</div>
+</section>
+<section id="solución-de-costes-1" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="solución-de-costes-1"><span class="header-section-number">5.3</span> Solución de costes:</h2>
+<p>En esta ocasión, vamos a aplicar todos los criterios a la vez con un único comando:</p>
+<div class="cell">
+<details class="code-fold">
+<summary>Código</summary>
+<div class="sourceCode cell-code" id="cb67"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb67-1"><a href="#cb67-1" aria-hidden="true" tabindex="-1"></a><span class="fu">criterio.Todos</span>(tb02,<span class="at">alfa=</span><span class="fl">0.5</span>,<span class="at">favorable =</span> <span class="cn">FALSE</span>)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>                    e1  e2  e3 Wald Optimista Hurwicz Savage Laplace
+d1                 122 130 257  257       122   189.5     37   169.7
+d2                 130 165 220  220       130   175.0     35   171.7
+d3                 220 220 250  250       220   235.0     98   230.0
+iAlt.Opt (Desfav.)  --  --  --   d2        d1      d2     d2      d1
+                   Punto Ideal Veces Optima
+d1                        37.0            2
+d2                        35.9            4
+d3                       136.4            0
+iAlt.Opt (Desfav.)          d2           d2</code></pre>
+</div>
+</div>
+<p>Veamos también el criterio de Hurwicz variando alpha:</p>
+<div class="cell">
+<details class="code-fold">
+<summary>Código</summary>
+<div class="sourceCode cell-code" id="cb69"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb69-1"><a href="#cb69-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dibuja.criterio.Hurwicz_Intervalos</span>(tb02,F,T)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Resolución_files/figure-html/unnamed-chunk-38-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$AltOptimas
+[1] 2 1
+
+$PuntosDeCorte
+[1] 0.822
+
+$IntervalosAlfa
+     Intervalo       Alternativa
+[1,] "( 0 , 0.822 )" "2"        
+[2,] "( 0.822 , 1 )" "1"        </code></pre>
+</div>
+</div>
+<p>Vemos que para alpha entre 0 y 0.822 la mejor decisión es d2 y para alpha entre 0.822 y 1, la mejor decisión es d1.</p>
+<p>Conclusión:</p>
+<p>Observando los resultados de la tabla, la mejor decisión es la alternativa 2 (Empresa “AhorraMudanzas”). Esto es debido a que en 4 de los 6 criterios se toma como la mejor opción.</p>
 <!-- -->
 
+</section>
 </section>
 
 </main>
@@ -981,18 +1876,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -1024,7 +1908,27 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
   const viewSource = window.document.getElementById('quarto-view-source') ||
                      window.document.getElementById('quarto-code-tools-source');
   if (viewSource) {
@@ -1083,7 +1987,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {
@@ -1180,7 +2084,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
@@ -1406,263 +2309,522 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Ejecutar el código</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="sourceCode" id="cb35" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Resolución"</span></span>
-<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> "Grupo 7"</span></span>
-<span id="cb35-4"><a href="#cb35-4" aria-hidden="true" tabindex="-1"></a><span class="an">editor:</span><span class="co"> visual</span></span>
-<span id="cb35-5"><a href="#cb35-5" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> "`r Sys.Date()`"</span></span>
-<span id="cb35-6"><a href="#cb35-6" aria-hidden="true" tabindex="-1"></a><span class="an">date-format:</span><span class="co"> "DD/MM/YYYY"</span></span>
-<span id="cb35-7"><a href="#cb35-7" aria-hidden="true" tabindex="-1"></a><span class="an">lang:</span><span class="co"> es</span></span>
-<span id="cb35-8"><a href="#cb35-8" aria-hidden="true" tabindex="-1"></a><span class="an">toc:</span><span class="co"> true</span></span>
-<span id="cb35-9"><a href="#cb35-9" aria-hidden="true" tabindex="-1"></a><span class="an">toc-depth:</span><span class="co"> 4</span></span>
-<span id="cb35-10"><a href="#cb35-10" aria-hidden="true" tabindex="-1"></a><span class="an">number-sections:</span><span class="co"> true</span></span>
-<span id="cb35-11"><a href="#cb35-11" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span></span>
-<span id="cb35-12"><a href="#cb35-12" aria-hidden="true" tabindex="-1"></a><span class="co">  html:</span></span>
-<span id="cb35-13"><a href="#cb35-13" aria-hidden="true" tabindex="-1"></a><span class="co">    code-tools: true</span></span>
-<span id="cb35-14"><a href="#cb35-14" aria-hidden="true" tabindex="-1"></a><span class="co">    code-fold: true</span></span>
-<span id="cb35-15"><a href="#cb35-15" aria-hidden="true" tabindex="-1"></a><span class="co">  pdf: </span></span>
-<span id="cb35-16"><a href="#cb35-16" aria-hidden="true" tabindex="-1"></a><span class="co">    keep-tex: true</span></span>
-<span id="cb35-17"><a href="#cb35-17" aria-hidden="true" tabindex="-1"></a><span class="co">    header-includes:</span></span>
-<span id="cb35-18"><a href="#cb35-18" aria-hidden="true" tabindex="-1"></a><span class="co">      - \usepackage{float}</span></span>
-<span id="cb35-19"><a href="#cb35-19" aria-hidden="true" tabindex="-1"></a><span class="co">      - \floatplacement{table}{H}</span></span>
-<span id="cb35-20"><a href="#cb35-20" aria-hidden="true" tabindex="-1"></a><span class="co">      - \floatplacement{figure}{H}</span></span>
-<span id="cb35-21"><a href="#cb35-21" aria-hidden="true" tabindex="-1"></a><span class="an">execute:</span><span class="co"> </span></span>
-<span id="cb35-22"><a href="#cb35-22" aria-hidden="true" tabindex="-1"></a><span class="co">  echo: true</span></span>
-<span id="cb35-23"><a href="#cb35-23" aria-hidden="true" tabindex="-1"></a><span class="co">  warnings: false</span></span>
-<span id="cb35-24"><a href="#cb35-24" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb35-25"><a href="#cb35-25" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-26"><a href="#cb35-26" aria-hidden="true" tabindex="-1"></a>\pagebreak</span>
-<span id="cb35-27"><a href="#cb35-27" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-28"><a href="#cb35-28" aria-hidden="true" tabindex="-1"></a><span class="fu"># Previo al planteamiento de los problemas</span></span>
-<span id="cb35-29"><a href="#cb35-29" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-30"><a href="#cb35-30" aria-hidden="true" tabindex="-1"></a>Implementamos las funciones de incertidumbre a utilizar</span>
-<span id="cb35-31"><a href="#cb35-31" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-34"><a href="#cb35-34" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb35-35"><a href="#cb35-35" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="st">"teoriadecision_funciones_incertidumbre.R"</span>)</span>
-<span id="cb35-36"><a href="#cb35-36" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-37"><a href="#cb35-37" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb35-38"><a href="#cb35-38" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-39"><a href="#cb35-39" aria-hidden="true" tabindex="-1"></a>Cargamos la librería tinytable para presentar las tablas en un mejor formato</span>
-<span id="cb35-40"><a href="#cb35-40" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-43"><a href="#cb35-43" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb35-44"><a href="#cb35-44" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tinytable)</span>
-<span id="cb35-45"><a href="#cb35-45" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-46"><a href="#cb35-46" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb35-47"><a href="#cb35-47" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-48"><a href="#cb35-48" aria-hidden="true" tabindex="-1"></a>\pagebreak</span>
-<span id="cb35-49"><a href="#cb35-49" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-50"><a href="#cb35-50" aria-hidden="true" tabindex="-1"></a><span class="fu"># Problema 1</span></span>
-<span id="cb35-51"><a href="#cb35-51" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-52"><a href="#cb35-52" aria-hidden="true" tabindex="-1"></a>Aplicar los criterios de decisión bajo incertidumbre al problema cuya matriz de valores numéricos viene dada en la siguiente tabla:</span>
-<span id="cb35-53"><a href="#cb35-53" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-54"><a href="#cb35-54" aria-hidden="true" tabindex="-1"></a>|     | e1  | e2  | e3  | e4  | e5  |</span>
-<span id="cb35-55"><a href="#cb35-55" aria-hidden="true" tabindex="-1"></a>|-----|-----|-----|-----|-----|-----|</span>
-<span id="cb35-56"><a href="#cb35-56" aria-hidden="true" tabindex="-1"></a>| d1  | 90  | 40  | 60  | 40  | 75  |</span>
-<span id="cb35-57"><a href="#cb35-57" aria-hidden="true" tabindex="-1"></a>| d2  | 50  | 70  | 55  | 65  | 60  |</span>
-<span id="cb35-58"><a href="#cb35-58" aria-hidden="true" tabindex="-1"></a>| d3  | 20  | 80  | 90  | 75  | 50  |</span>
-<span id="cb35-59"><a href="#cb35-59" aria-hidden="true" tabindex="-1"></a>| d4  | 70  | 45  | 40  | 95  | 30  |</span>
-<span id="cb35-60"><a href="#cb35-60" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-61"><a href="#cb35-61" aria-hidden="true" tabindex="-1"></a>Donde ei indica los estados de la naturaleza (desde i = 1,...,5) y di indica las diferentes alternativas / decisiones a tomar (desde i = 1,...,4)</span>
-<span id="cb35-62"><a href="#cb35-62" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-63"><a href="#cb35-63" aria-hidden="true" tabindex="-1"></a>Considera el problema primero de beneficios (favorable) y posteriormente de costos (desfavorable).</span>
-<span id="cb35-64"><a href="#cb35-64" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-65"><a href="#cb35-65" aria-hidden="true" tabindex="-1"></a><span class="fu">## Creación de la matriz</span></span>
-<span id="cb35-66"><a href="#cb35-66" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-69"><a href="#cb35-69" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb35-70"><a href="#cb35-70" aria-hidden="true" tabindex="-1"></a><span class="co"># Creamos la tabla con la función crea.tablaX</span></span>
-<span id="cb35-71"><a href="#cb35-71" aria-hidden="true" tabindex="-1"></a>tabla1 <span class="ot">=</span> <span class="fu">crea.tablaX</span>(<span class="fu">c</span>(<span class="dv">90</span>,<span class="dv">40</span>, <span class="dv">60</span>, <span class="dv">40</span>, <span class="dv">75</span>,</span>
-<span id="cb35-72"><a href="#cb35-72" aria-hidden="true" tabindex="-1"></a>                       <span class="dv">50</span>, <span class="dv">70</span>, <span class="dv">55</span>, <span class="dv">65</span>, <span class="dv">60</span>,</span>
-<span id="cb35-73"><a href="#cb35-73" aria-hidden="true" tabindex="-1"></a>                       <span class="dv">20</span>, <span class="dv">80</span>, <span class="dv">90</span>, <span class="dv">75</span>, <span class="dv">50</span>, </span>
-<span id="cb35-74"><a href="#cb35-74" aria-hidden="true" tabindex="-1"></a>                       <span class="dv">70</span>, <span class="dv">45</span>, <span class="dv">40</span>, <span class="dv">95</span>, <span class="dv">30</span>), <span class="at">numalternativas =</span> <span class="dv">4</span>, <span class="at">numestados =</span> <span class="dv">5</span>)</span>
-<span id="cb35-75"><a href="#cb35-75" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-76"><a href="#cb35-76" aria-hidden="true" tabindex="-1"></a><span class="co"># Convertimos la tabla en un data.frame</span></span>
-<span id="cb35-77"><a href="#cb35-77" aria-hidden="true" tabindex="-1"></a>tabla_1 <span class="ot">=</span> <span class="fu">as.data.frame</span>(tabla1)</span>
-<span id="cb35-78"><a href="#cb35-78" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-79"><a href="#cb35-79" aria-hidden="true" tabindex="-1"></a><span class="co"># Presentamos la tabla de valores</span></span>
-<span id="cb35-80"><a href="#cb35-80" aria-hidden="true" tabindex="-1"></a><span class="fu">tt</span>(tabla_1, <span class="at">rownames =</span> T)</span>
-<span id="cb35-81"><a href="#cb35-81" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb35-82"><a href="#cb35-82" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-83"><a href="#cb35-83" aria-hidden="true" tabindex="-1"></a><span class="fu">## Resolución de beneficios</span></span>
-<span id="cb35-84"><a href="#cb35-84" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-85"><a href="#cb35-85" aria-hidden="true" tabindex="-1"></a>Vamos a resolver esta matriz de valores para el caso de beneficios, en cada uno de los criterios dados en la asignatura.</span>
-<span id="cb35-86"><a href="#cb35-86" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-87"><a href="#cb35-87" aria-hidden="true" tabindex="-1"></a><span class="fu">### Criterio de Wald o Pesimista</span></span>
-<span id="cb35-88"><a href="#cb35-88" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-89"><a href="#cb35-89" aria-hidden="true" tabindex="-1"></a>El criterio de Wald selecciona la alternativa cuyo peor resultado sea el más alto posible. Es decir, asume una postura pesimista: se elige la opción que garantiza el mejor mínimo beneficio.</span>
-<span id="cb35-90"><a href="#cb35-90" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-93"><a href="#cb35-93" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb35-94"><a href="#cb35-94" aria-hidden="true" tabindex="-1"></a>sol_11 <span class="ot">=</span> <span class="fu">criterio.Wald</span>(tabla1, <span class="at">favorable =</span> T)</span>
-<span id="cb35-95"><a href="#cb35-95" aria-hidden="true" tabindex="-1"></a>sol_11</span>
-<span id="cb35-96"><a href="#cb35-96" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb35-97"><a href="#cb35-97" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-98"><a href="#cb35-98" aria-hidden="true" tabindex="-1"></a>La mejor alternativa según el criterio de Wald, es la alternativa 2.</span>
-<span id="cb35-99"><a href="#cb35-99" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-100"><a href="#cb35-100" aria-hidden="true" tabindex="-1"></a><span class="fu">### Criterio optimista</span></span>
-<span id="cb35-101"><a href="#cb35-101" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-102"><a href="#cb35-102" aria-hidden="true" tabindex="-1"></a>El criterio optimista (también llamado de Maximax) elige la alternativa con el máximo beneficio posible, suponiendo que siempre ocurrirá el mejor escenario.</span>
-<span id="cb35-103"><a href="#cb35-103" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-106"><a href="#cb35-106" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb35-107"><a href="#cb35-107" aria-hidden="true" tabindex="-1"></a>sol_12 <span class="ot">=</span> <span class="fu">criterio.Optimista</span>(tabla1, <span class="at">favorable =</span> T)</span>
-<span id="cb35-108"><a href="#cb35-108" aria-hidden="true" tabindex="-1"></a>sol_12</span>
-<span id="cb35-109"><a href="#cb35-109" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb35-110"><a href="#cb35-110" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-111"><a href="#cb35-111" aria-hidden="true" tabindex="-1"></a>La mejor alternativa según el criterio optimista, es la alternativa 4.</span>
-<span id="cb35-112"><a href="#cb35-112" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-113"><a href="#cb35-113" aria-hidden="true" tabindex="-1"></a><span class="fu">### Criterio de Hurwicz</span></span>
-<span id="cb35-114"><a href="#cb35-114" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-115"><a href="#cb35-115" aria-hidden="true" tabindex="-1"></a>Este criterio combina el pesimismo y el optimismo mediante un parámetro α (alfa) entre 0 y 1. Este se calcula como una media ponderada entre el mejor beneficio (ponderado por α) y el peor beneficio (ponderado por 1−α).</span>
-<span id="cb35-116"><a href="#cb35-116" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-117"><a href="#cb35-117" aria-hidden="true" tabindex="-1"></a>Vamos a suponer un nivel de alfa tal que **α = 0.5.**</span>
-<span id="cb35-118"><a href="#cb35-118" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-121"><a href="#cb35-121" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb35-122"><a href="#cb35-122" aria-hidden="true" tabindex="-1"></a>sol_13 <span class="ot">=</span> <span class="fu">criterio.Hurwicz</span>(tabla1, <span class="at">alfa =</span> <span class="fl">0.5</span>, <span class="at">favorable =</span> T)</span>
-<span id="cb35-123"><a href="#cb35-123" aria-hidden="true" tabindex="-1"></a>sol_13</span>
-<span id="cb35-124"><a href="#cb35-124" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb35-125"><a href="#cb35-125" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-126"><a href="#cb35-126" aria-hidden="true" tabindex="-1"></a>La mejor alternativa según el criterio de Hurwicz, es la alternativa 1.</span>
-<span id="cb35-127"><a href="#cb35-127" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-128"><a href="#cb35-128" aria-hidden="true" tabindex="-1"></a>Construimos las gráficas asociadas al criterio de Hurwicz:</span>
-<span id="cb35-129"><a href="#cb35-129" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-132"><a href="#cb35-132" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb35-133"><a href="#cb35-133" aria-hidden="true" tabindex="-1"></a>alfa <span class="ot">=</span> <span class="fl">0.5</span></span>
-<span id="cb35-134"><a href="#cb35-134" aria-hidden="true" tabindex="-1"></a><span class="fu">dibuja.criterio.Hurwicz</span>(tabla1, <span class="at">favorable =</span> T)</span>
-<span id="cb35-135"><a href="#cb35-135" aria-hidden="true" tabindex="-1"></a><span class="fu">dibuja.criterio.Hurwicz_Intervalos</span>(tabla1, <span class="at">favorable =</span> T)</span>
-<span id="cb35-136"><a href="#cb35-136" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb35-137"><a href="#cb35-137" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-138"><a href="#cb35-138" aria-hidden="true" tabindex="-1"></a><span class="fu">### Criterio de Savage</span></span>
-<span id="cb35-139"><a href="#cb35-139" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-140"><a href="#cb35-140" aria-hidden="true" tabindex="-1"></a>El criterio de Savage (criterio del mínimo arrepentimiento) busca la alternativa que minimiza la pérdida por no haber elegido la mejor opción en cada estado. Es decir, se elige aquella cuyo peor “arrepentimiento” sea el más pequeño.</span>
-<span id="cb35-141"><a href="#cb35-141" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-144"><a href="#cb35-144" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb35-145"><a href="#cb35-145" aria-hidden="true" tabindex="-1"></a>sol_14 <span class="ot">=</span> <span class="fu">criterio.Savage</span>(tabla1, <span class="at">favorable =</span> T)</span>
-<span id="cb35-146"><a href="#cb35-146" aria-hidden="true" tabindex="-1"></a>sol_14</span>
-<span id="cb35-147"><a href="#cb35-147" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb35-148"><a href="#cb35-148" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-149"><a href="#cb35-149" aria-hidden="true" tabindex="-1"></a>La mejor alternativa según el criterio de Savage, es la alternativa 2.</span>
-<span id="cb35-150"><a href="#cb35-150" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-151"><a href="#cb35-151" aria-hidden="true" tabindex="-1"></a><span class="fu">### Criterio de Laplace</span></span>
-<span id="cb35-152"><a href="#cb35-152" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-153"><a href="#cb35-153" aria-hidden="true" tabindex="-1"></a>El criterio de Laplace asume que todos los estados son igualmente probables, y elige la alternativa con el mayor beneficio medio.</span>
-<span id="cb35-154"><a href="#cb35-154" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-157"><a href="#cb35-157" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb35-158"><a href="#cb35-158" aria-hidden="true" tabindex="-1"></a>sol_15 <span class="ot">=</span> <span class="fu">criterio.Laplace</span>(tabla1, <span class="at">favorable =</span> T)</span>
-<span id="cb35-159"><a href="#cb35-159" aria-hidden="true" tabindex="-1"></a>sol_15</span>
-<span id="cb35-160"><a href="#cb35-160" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb35-161"><a href="#cb35-161" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-162"><a href="#cb35-162" aria-hidden="true" tabindex="-1"></a>La mejor alternativa según el criterio de Laplace, es la alternativa 3.</span>
-<span id="cb35-163"><a href="#cb35-163" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-164"><a href="#cb35-164" aria-hidden="true" tabindex="-1"></a><span class="fu">### Criterio del punto ideal</span></span>
-<span id="cb35-165"><a href="#cb35-165" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-166"><a href="#cb35-166" aria-hidden="true" tabindex="-1"></a>El criterio del punto ideal busca la alternativa más cercana al punto ideal, es decir, aquella que más se aproxima simultáneamente al máximo beneficio posible en todos los estados.</span>
-<span id="cb35-167"><a href="#cb35-167" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-170"><a href="#cb35-170" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb35-171"><a href="#cb35-171" aria-hidden="true" tabindex="-1"></a>sol_16 <span class="ot">=</span> <span class="fu">criterio.PuntoIdeal</span>(tabla1, <span class="at">favorable =</span> T)</span>
-<span id="cb35-172"><a href="#cb35-172" aria-hidden="true" tabindex="-1"></a>sol_16</span>
-<span id="cb35-173"><a href="#cb35-173" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb35-174"><a href="#cb35-174" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-175"><a href="#cb35-175" aria-hidden="true" tabindex="-1"></a>La mejor alternativa según el criterio del punto ideal, es la alternativa 2.</span>
-<span id="cb35-176"><a href="#cb35-176" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-177"><a href="#cb35-177" aria-hidden="true" tabindex="-1"></a><span class="fu">## Resolución de costes</span></span>
-<span id="cb35-178"><a href="#cb35-178" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-179"><a href="#cb35-179" aria-hidden="true" tabindex="-1"></a>Vamos a resolver esta matriz de valores para el caso desfavorable, en cada uno de los criterios dados en la asignatura.</span>
-<span id="cb35-180"><a href="#cb35-180" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-181"><a href="#cb35-181" aria-hidden="true" tabindex="-1"></a><span class="fu">### Criterio de Wald o pesimista </span></span>
-<span id="cb35-182"><a href="#cb35-182" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-183"><a href="#cb35-183" aria-hidden="true" tabindex="-1"></a>El criterio de Wald selecciona la alternativa cuyo peor resultado sea el más bajo posible.\</span>
-<span id="cb35-184"><a href="#cb35-184" aria-hidden="true" tabindex="-1"></a>Es decir, asume una postura pesimista: se elige la opción que garantiza el menor coste máximo.</span>
-<span id="cb35-185"><a href="#cb35-185" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-188"><a href="#cb35-188" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb35-189"><a href="#cb35-189" aria-hidden="true" tabindex="-1"></a>sol_21 <span class="ot">=</span> <span class="fu">criterio.Wald</span>(tabla1, <span class="at">favorable =</span> F)</span>
-<span id="cb35-190"><a href="#cb35-190" aria-hidden="true" tabindex="-1"></a>sol_21</span>
-<span id="cb35-191"><a href="#cb35-191" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-192"><a href="#cb35-192" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb35-193"><a href="#cb35-193" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-194"><a href="#cb35-194" aria-hidden="true" tabindex="-1"></a>La mejor alternativa según el criterio de Wald, es la alternativa 2.</span>
-<span id="cb35-195"><a href="#cb35-195" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-196"><a href="#cb35-196" aria-hidden="true" tabindex="-1"></a><span class="fu">### Criterio optimista</span></span>
-<span id="cb35-197"><a href="#cb35-197" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-198"><a href="#cb35-198" aria-hidden="true" tabindex="-1"></a>El criterio optimista (también llamado de Minimin) elige la alternativa con el menor coste posible, suponiendo que siempre ocurrirá el mejor escenario.</span>
-<span id="cb35-199"><a href="#cb35-199" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-202"><a href="#cb35-202" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb35-203"><a href="#cb35-203" aria-hidden="true" tabindex="-1"></a>sol_22 <span class="ot">=</span> <span class="fu">criterio.Optimista</span>(tabla1, <span class="at">favorable =</span> F)</span>
-<span id="cb35-204"><a href="#cb35-204" aria-hidden="true" tabindex="-1"></a>sol_22</span>
-<span id="cb35-205"><a href="#cb35-205" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb35-206"><a href="#cb35-206" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-207"><a href="#cb35-207" aria-hidden="true" tabindex="-1"></a>La mejor alternativa según el criterio optimista es la alternativa 3.</span>
-<span id="cb35-208"><a href="#cb35-208" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-209"><a href="#cb35-209" aria-hidden="true" tabindex="-1"></a><span class="fu">### Criterio de Hurwicz</span></span>
-<span id="cb35-210"><a href="#cb35-210" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-211"><a href="#cb35-211" aria-hidden="true" tabindex="-1"></a>Este criterio combina el pesimismo y el optimismo mediante un parámetro α (alfa) entre 0 y 1. Este se calcula como una media ponderada entre el mejor coste (mínimo) (ponderado por α) y el peor coste (máximo) (ponderado por 1−α).</span>
-<span id="cb35-212"><a href="#cb35-212" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-213"><a href="#cb35-213" aria-hidden="true" tabindex="-1"></a>Vamos a suponer un nivel de alfa tal que **α = 0.5.**</span>
-<span id="cb35-214"><a href="#cb35-214" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-217"><a href="#cb35-217" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb35-218"><a href="#cb35-218" aria-hidden="true" tabindex="-1"></a>sol_23 <span class="ot">=</span> <span class="fu">criterio.Hurwicz</span>(tabla1, <span class="at">alfa =</span> <span class="fl">0.5</span>, <span class="at">favorable =</span> F)</span>
-<span id="cb35-219"><a href="#cb35-219" aria-hidden="true" tabindex="-1"></a>sol_23</span>
-<span id="cb35-220"><a href="#cb35-220" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb35-221"><a href="#cb35-221" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-222"><a href="#cb35-222" aria-hidden="true" tabindex="-1"></a>La mejor alternativa según el criterio de Hurwicz es la alternativa 3.</span>
-<span id="cb35-223"><a href="#cb35-223" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-224"><a href="#cb35-224" aria-hidden="true" tabindex="-1"></a>Construimos las gráficas asociadas al criterio de Hurwicz:</span>
-<span id="cb35-225"><a href="#cb35-225" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-228"><a href="#cb35-228" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb35-229"><a href="#cb35-229" aria-hidden="true" tabindex="-1"></a><span class="fu">dibuja.criterio.Hurwicz</span>(tabla1, <span class="at">favorable =</span> F)</span>
-<span id="cb35-230"><a href="#cb35-230" aria-hidden="true" tabindex="-1"></a><span class="fu">dibuja.criterio.Hurwicz_Intervalos</span>(tabla1, <span class="at">favorable =</span> F)</span>
-<span id="cb35-231"><a href="#cb35-231" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb35-232"><a href="#cb35-232" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-233"><a href="#cb35-233" aria-hidden="true" tabindex="-1"></a><span class="fu">### Criterio de Savage</span></span>
-<span id="cb35-234"><a href="#cb35-234" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-235"><a href="#cb35-235" aria-hidden="true" tabindex="-1"></a>El criterio de Savage (criterio del mínimo arrepentimiento) busca la alternativa que minimiza la pérdida por haber elegido la opción más costosa en cada estado. Se elige la alternativa cuyo peor arrepentimiento (coste adicional) sea el menor posible.</span>
-<span id="cb35-236"><a href="#cb35-236" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-239"><a href="#cb35-239" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb35-240"><a href="#cb35-240" aria-hidden="true" tabindex="-1"></a>sol_24 <span class="ot">=</span> <span class="fu">criterio.Savage</span>(tabla1, <span class="at">favorable =</span> F)</span>
-<span id="cb35-241"><a href="#cb35-241" aria-hidden="true" tabindex="-1"></a>sol_24</span>
-<span id="cb35-242"><a href="#cb35-242" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb35-243"><a href="#cb35-243" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-244"><a href="#cb35-244" aria-hidden="true" tabindex="-1"></a>La mejor alternativa según el criterio de Savage es la alternativa 2.</span>
-<span id="cb35-245"><a href="#cb35-245" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-246"><a href="#cb35-246" aria-hidden="true" tabindex="-1"></a><span class="fu">### Criterio de Laplace</span></span>
-<span id="cb35-247"><a href="#cb35-247" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-248"><a href="#cb35-248" aria-hidden="true" tabindex="-1"></a>El criterio de Laplace asume que todos los estados son igualmente probables, y selecciona la alternativa con el menor coste medio.</span>
-<span id="cb35-249"><a href="#cb35-249" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-252"><a href="#cb35-252" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb35-253"><a href="#cb35-253" aria-hidden="true" tabindex="-1"></a>sol_25 <span class="ot">=</span> <span class="fu">criterio.Laplace</span>(tabla1, <span class="at">favorable =</span> F)</span>
-<span id="cb35-254"><a href="#cb35-254" aria-hidden="true" tabindex="-1"></a>sol_25</span>
-<span id="cb35-255"><a href="#cb35-255" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb35-256"><a href="#cb35-256" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-257"><a href="#cb35-257" aria-hidden="true" tabindex="-1"></a>La mejor alternativa según el criterio de Laplace es la alternativa 4.</span>
-<span id="cb35-258"><a href="#cb35-258" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-259"><a href="#cb35-259" aria-hidden="true" tabindex="-1"></a><span class="fu">### Criterio del punto ideal</span></span>
-<span id="cb35-260"><a href="#cb35-260" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-261"><a href="#cb35-261" aria-hidden="true" tabindex="-1"></a>El criterio del punto ideal busca la alternativa más cercana al punto ideal mínimo, es decir, aquella que más se aproxima simultáneamente al menor coste posible en todos los estados.</span>
-<span id="cb35-262"><a href="#cb35-262" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-265"><a href="#cb35-265" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb35-266"><a href="#cb35-266" aria-hidden="true" tabindex="-1"></a>sol_26 <span class="ot">=</span> <span class="fu">criterio.PuntoIdeal</span>(tabla1, <span class="at">favorable =</span> F)</span>
-<span id="cb35-267"><a href="#cb35-267" aria-hidden="true" tabindex="-1"></a>sol_26</span>
-<span id="cb35-268"><a href="#cb35-268" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb35-269"><a href="#cb35-269" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-270"><a href="#cb35-270" aria-hidden="true" tabindex="-1"></a>La mejor alternativa según el criterio del punto ideal es la alternativa 2.</span>
-<span id="cb35-271"><a href="#cb35-271" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-272"><a href="#cb35-272" aria-hidden="true" tabindex="-1"></a>\pagebreak</span>
-<span id="cb35-273"><a href="#cb35-273" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-274"><a href="#cb35-274" aria-hidden="true" tabindex="-1"></a><span class="fu"># Problema 2</span></span>
-<span id="cb35-275"><a href="#cb35-275" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-276"><a href="#cb35-276" aria-hidden="true" tabindex="-1"></a>Miguel está pensando en contratar un servicio de Internet para su hogar. Ha consultado varias compañías y le han dado los siguientes informes:</span>
-<span id="cb35-277"><a href="#cb35-277" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-278"><a href="#cb35-278" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Con Digi debe pagar un cuota mensual de 25€, pero la velocidad máxima solo estará disponible después de 6 meses; hasta entonces, solo tendrá la mitad de velocidad contratada.</span>
-<span id="cb35-279"><a href="#cb35-279" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-280"><a href="#cb35-280" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Con O2 puede disfrutar de la velocidad completa desde el primer mes, pero deberá pagar una cuota de 50€ al mes.</span>
-<span id="cb35-281"><a href="#cb35-281" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-282"><a href="#cb35-282" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Con Vodafone debe pagar 35€ al mes, lo que garantiza la velocidad completa, excepto en horas puntas, cuando la velocidad se reduce.</span>
-<span id="cb35-283"><a href="#cb35-283" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-284"><a href="#cb35-284" aria-hidden="true" tabindex="-1"></a>Miguel trabaja desde casa y necesita Internet para videollamadas frecuentes y descargas grandes de archivos. Supongamos que el coste asociado a la velocidad insuficiente son:</span>
-<span id="cb35-285"><a href="#cb35-285" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-286"><a href="#cb35-286" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Reducción en productividad y retrasos en descargas: 400€</span>
-<span id="cb35-287"><a href="#cb35-287" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-288"><a href="#cb35-288" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Problemas en videollamadas y reuniones importantes: 1000€</span>
-<span id="cb35-289"><a href="#cb35-289" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-290"><a href="#cb35-290" aria-hidden="true" tabindex="-1"></a>Miguel quiere evaluar cuál sería el coste total del primer año, considerando que podría tener meses de alta demanda de trabajo o meses de baja demanda, y cuál sería la mejor compañía a elegir.</span>
-</code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb71" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb71-1"><a href="#cb71-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb71-2"><a href="#cb71-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Resolución"</span></span>
+<span id="cb71-3"><a href="#cb71-3" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> "Grupo 7"</span></span>
+<span id="cb71-4"><a href="#cb71-4" aria-hidden="true" tabindex="-1"></a><span class="an">editor:</span><span class="co"> visual</span></span>
+<span id="cb71-5"><a href="#cb71-5" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> "`r Sys.Date()`"</span></span>
+<span id="cb71-6"><a href="#cb71-6" aria-hidden="true" tabindex="-1"></a><span class="an">date-format:</span><span class="co"> "DD/MM/YYYY"</span></span>
+<span id="cb71-7"><a href="#cb71-7" aria-hidden="true" tabindex="-1"></a><span class="an">lang:</span><span class="co"> es</span></span>
+<span id="cb71-8"><a href="#cb71-8" aria-hidden="true" tabindex="-1"></a><span class="an">toc:</span><span class="co"> true</span></span>
+<span id="cb71-9"><a href="#cb71-9" aria-hidden="true" tabindex="-1"></a><span class="an">toc-depth:</span><span class="co"> 4</span></span>
+<span id="cb71-10"><a href="#cb71-10" aria-hidden="true" tabindex="-1"></a><span class="an">number-sections:</span><span class="co"> true</span></span>
+<span id="cb71-11"><a href="#cb71-11" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span></span>
+<span id="cb71-12"><a href="#cb71-12" aria-hidden="true" tabindex="-1"></a><span class="co">  html:</span></span>
+<span id="cb71-13"><a href="#cb71-13" aria-hidden="true" tabindex="-1"></a><span class="co">    code-tools: true</span></span>
+<span id="cb71-14"><a href="#cb71-14" aria-hidden="true" tabindex="-1"></a><span class="co">    code-fold: true</span></span>
+<span id="cb71-15"><a href="#cb71-15" aria-hidden="true" tabindex="-1"></a><span class="co">  pdf: </span></span>
+<span id="cb71-16"><a href="#cb71-16" aria-hidden="true" tabindex="-1"></a><span class="co">    keep-tex: true</span></span>
+<span id="cb71-17"><a href="#cb71-17" aria-hidden="true" tabindex="-1"></a><span class="co">    header-includes:</span></span>
+<span id="cb71-18"><a href="#cb71-18" aria-hidden="true" tabindex="-1"></a><span class="co">      - \usepackage{float}</span></span>
+<span id="cb71-19"><a href="#cb71-19" aria-hidden="true" tabindex="-1"></a><span class="co">      - \floatplacement{table}{H}</span></span>
+<span id="cb71-20"><a href="#cb71-20" aria-hidden="true" tabindex="-1"></a><span class="co">      - \floatplacement{figure}{H}</span></span>
+<span id="cb71-21"><a href="#cb71-21" aria-hidden="true" tabindex="-1"></a><span class="an">execute:</span><span class="co"> </span></span>
+<span id="cb71-22"><a href="#cb71-22" aria-hidden="true" tabindex="-1"></a><span class="co">  echo: true</span></span>
+<span id="cb71-23"><a href="#cb71-23" aria-hidden="true" tabindex="-1"></a><span class="co">  warnings: false</span></span>
+<span id="cb71-24"><a href="#cb71-24" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb71-25"><a href="#cb71-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-26"><a href="#cb71-26" aria-hidden="true" tabindex="-1"></a>\pagebreak</span>
+<span id="cb71-27"><a href="#cb71-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-28"><a href="#cb71-28" aria-hidden="true" tabindex="-1"></a><span class="fu"># Previo al planteamiento de los problemas</span></span>
+<span id="cb71-29"><a href="#cb71-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-30"><a href="#cb71-30" aria-hidden="true" tabindex="-1"></a>Implementamos las funciones de incertidumbre a utilizar</span>
+<span id="cb71-31"><a href="#cb71-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-34"><a href="#cb71-34" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb71-35"><a href="#cb71-35" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="st">"teoriadecision_funciones_incertidumbre.R"</span>)</span>
+<span id="cb71-36"><a href="#cb71-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-37"><a href="#cb71-37" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb71-38"><a href="#cb71-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-39"><a href="#cb71-39" aria-hidden="true" tabindex="-1"></a>Cargamos la librería tinytable para presentar las tablas en un mejor formato</span>
+<span id="cb71-40"><a href="#cb71-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-43"><a href="#cb71-43" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb71-44"><a href="#cb71-44" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tinytable)</span>
+<span id="cb71-45"><a href="#cb71-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-46"><a href="#cb71-46" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb71-47"><a href="#cb71-47" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-48"><a href="#cb71-48" aria-hidden="true" tabindex="-1"></a>\pagebreak</span>
+<span id="cb71-49"><a href="#cb71-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-50"><a href="#cb71-50" aria-hidden="true" tabindex="-1"></a><span class="fu"># Problema 1</span></span>
+<span id="cb71-51"><a href="#cb71-51" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-52"><a href="#cb71-52" aria-hidden="true" tabindex="-1"></a>Aplicar los criterios de decisión bajo incertidumbre al problema cuya matriz de valores numéricos viene dada en la siguiente tabla:</span>
+<span id="cb71-53"><a href="#cb71-53" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-54"><a href="#cb71-54" aria-hidden="true" tabindex="-1"></a>|     | e1  | e2  | e3  | e4  | e5  |</span>
+<span id="cb71-55"><a href="#cb71-55" aria-hidden="true" tabindex="-1"></a>|-----|-----|-----|-----|-----|-----|</span>
+<span id="cb71-56"><a href="#cb71-56" aria-hidden="true" tabindex="-1"></a>| d1  | 90  | 40  | 60  | 40  | 75  |</span>
+<span id="cb71-57"><a href="#cb71-57" aria-hidden="true" tabindex="-1"></a>| d2  | 50  | 70  | 55  | 65  | 60  |</span>
+<span id="cb71-58"><a href="#cb71-58" aria-hidden="true" tabindex="-1"></a>| d3  | 20  | 80  | 90  | 75  | 50  |</span>
+<span id="cb71-59"><a href="#cb71-59" aria-hidden="true" tabindex="-1"></a>| d4  | 70  | 45  | 40  | 95  | 30  |</span>
+<span id="cb71-60"><a href="#cb71-60" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-61"><a href="#cb71-61" aria-hidden="true" tabindex="-1"></a>Donde ei indica los estados de la naturaleza (desde i = 1,...,5) y di indica las diferentes alternativas / decisiones a tomar (desde i = 1,...,4)</span>
+<span id="cb71-62"><a href="#cb71-62" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-63"><a href="#cb71-63" aria-hidden="true" tabindex="-1"></a>Considera el problema primero de beneficios (favorable) y posteriormente de costos (desfavorable).</span>
+<span id="cb71-64"><a href="#cb71-64" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-65"><a href="#cb71-65" aria-hidden="true" tabindex="-1"></a><span class="fu">## Creación de la matriz</span></span>
+<span id="cb71-66"><a href="#cb71-66" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-69"><a href="#cb71-69" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb71-70"><a href="#cb71-70" aria-hidden="true" tabindex="-1"></a><span class="co"># Creamos la tabla con la función crea.tablaX</span></span>
+<span id="cb71-71"><a href="#cb71-71" aria-hidden="true" tabindex="-1"></a>tabla1 <span class="ot">=</span> <span class="fu">crea.tablaX</span>(<span class="fu">c</span>(<span class="dv">90</span>,<span class="dv">40</span>, <span class="dv">60</span>, <span class="dv">40</span>, <span class="dv">75</span>,</span>
+<span id="cb71-72"><a href="#cb71-72" aria-hidden="true" tabindex="-1"></a>                       <span class="dv">50</span>, <span class="dv">70</span>, <span class="dv">55</span>, <span class="dv">65</span>, <span class="dv">60</span>,</span>
+<span id="cb71-73"><a href="#cb71-73" aria-hidden="true" tabindex="-1"></a>                       <span class="dv">20</span>, <span class="dv">80</span>, <span class="dv">90</span>, <span class="dv">75</span>, <span class="dv">50</span>, </span>
+<span id="cb71-74"><a href="#cb71-74" aria-hidden="true" tabindex="-1"></a>                       <span class="dv">70</span>, <span class="dv">45</span>, <span class="dv">40</span>, <span class="dv">95</span>, <span class="dv">30</span>), <span class="at">numalternativas =</span> <span class="dv">4</span>, <span class="at">numestados =</span> <span class="dv">5</span>)</span>
+<span id="cb71-75"><a href="#cb71-75" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-76"><a href="#cb71-76" aria-hidden="true" tabindex="-1"></a><span class="co"># Convertimos la tabla en un data.frame</span></span>
+<span id="cb71-77"><a href="#cb71-77" aria-hidden="true" tabindex="-1"></a>tabla_1 <span class="ot">=</span> <span class="fu">as.data.frame</span>(tabla1)</span>
+<span id="cb71-78"><a href="#cb71-78" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-79"><a href="#cb71-79" aria-hidden="true" tabindex="-1"></a><span class="co"># Presentamos la tabla de valores</span></span>
+<span id="cb71-80"><a href="#cb71-80" aria-hidden="true" tabindex="-1"></a><span class="fu">tt</span>(tabla_1, <span class="at">rownames =</span> T)</span>
+<span id="cb71-81"><a href="#cb71-81" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb71-82"><a href="#cb71-82" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-83"><a href="#cb71-83" aria-hidden="true" tabindex="-1"></a><span class="fu">## Resolución de beneficios</span></span>
+<span id="cb71-84"><a href="#cb71-84" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-85"><a href="#cb71-85" aria-hidden="true" tabindex="-1"></a>Vamos a resolver esta matriz de valores para el caso de beneficios, en cada uno de los criterios dados en la asignatura.</span>
+<span id="cb71-86"><a href="#cb71-86" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-87"><a href="#cb71-87" aria-hidden="true" tabindex="-1"></a><span class="fu">### Criterio de Wald o Pesimista</span></span>
+<span id="cb71-88"><a href="#cb71-88" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-89"><a href="#cb71-89" aria-hidden="true" tabindex="-1"></a>El criterio de Wald selecciona la alternativa cuyo peor resultado sea el más alto posible. Es decir, asume una postura pesimista: se elige la opción que garantiza el mejor mínimo beneficio.</span>
+<span id="cb71-90"><a href="#cb71-90" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-93"><a href="#cb71-93" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb71-94"><a href="#cb71-94" aria-hidden="true" tabindex="-1"></a>sol_11 <span class="ot">=</span> <span class="fu">criterio.Wald</span>(tabla1, <span class="at">favorable =</span> T)</span>
+<span id="cb71-95"><a href="#cb71-95" aria-hidden="true" tabindex="-1"></a>sol_11</span>
+<span id="cb71-96"><a href="#cb71-96" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb71-97"><a href="#cb71-97" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-98"><a href="#cb71-98" aria-hidden="true" tabindex="-1"></a>La mejor alternativa según el criterio de Wald, es la alternativa 2.</span>
+<span id="cb71-99"><a href="#cb71-99" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-100"><a href="#cb71-100" aria-hidden="true" tabindex="-1"></a><span class="fu">### Criterio optimista</span></span>
+<span id="cb71-101"><a href="#cb71-101" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-102"><a href="#cb71-102" aria-hidden="true" tabindex="-1"></a>El criterio optimista (también llamado de Maximax) elige la alternativa con el máximo beneficio posible, suponiendo que siempre ocurrirá el mejor escenario.</span>
+<span id="cb71-103"><a href="#cb71-103" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-106"><a href="#cb71-106" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb71-107"><a href="#cb71-107" aria-hidden="true" tabindex="-1"></a>sol_12 <span class="ot">=</span> <span class="fu">criterio.Optimista</span>(tabla1, <span class="at">favorable =</span> T)</span>
+<span id="cb71-108"><a href="#cb71-108" aria-hidden="true" tabindex="-1"></a>sol_12</span>
+<span id="cb71-109"><a href="#cb71-109" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb71-110"><a href="#cb71-110" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-111"><a href="#cb71-111" aria-hidden="true" tabindex="-1"></a>La mejor alternativa según el criterio optimista, es la alternativa 4.</span>
+<span id="cb71-112"><a href="#cb71-112" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-113"><a href="#cb71-113" aria-hidden="true" tabindex="-1"></a><span class="fu">### Criterio de Hurwicz</span></span>
+<span id="cb71-114"><a href="#cb71-114" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-115"><a href="#cb71-115" aria-hidden="true" tabindex="-1"></a>Este criterio combina el pesimismo y el optimismo mediante un parámetro α (alfa) entre 0 y 1. Este se calcula como una media ponderada entre el mejor beneficio (ponderado por α) y el peor beneficio (ponderado por 1−α).</span>
+<span id="cb71-116"><a href="#cb71-116" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-117"><a href="#cb71-117" aria-hidden="true" tabindex="-1"></a>Vamos a suponer un nivel de alfa tal que **α = 0.5.**</span>
+<span id="cb71-118"><a href="#cb71-118" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-121"><a href="#cb71-121" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb71-122"><a href="#cb71-122" aria-hidden="true" tabindex="-1"></a>sol_13 <span class="ot">=</span> <span class="fu">criterio.Hurwicz</span>(tabla1, <span class="at">alfa =</span> <span class="fl">0.5</span>, <span class="at">favorable =</span> T)</span>
+<span id="cb71-123"><a href="#cb71-123" aria-hidden="true" tabindex="-1"></a>sol_13</span>
+<span id="cb71-124"><a href="#cb71-124" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb71-125"><a href="#cb71-125" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-126"><a href="#cb71-126" aria-hidden="true" tabindex="-1"></a>La mejor alternativa según el criterio de Hurwicz, es la alternativa 1.</span>
+<span id="cb71-127"><a href="#cb71-127" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-128"><a href="#cb71-128" aria-hidden="true" tabindex="-1"></a>Construimos las gráficas asociadas al criterio de Hurwicz:</span>
+<span id="cb71-129"><a href="#cb71-129" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-132"><a href="#cb71-132" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb71-133"><a href="#cb71-133" aria-hidden="true" tabindex="-1"></a>alfa <span class="ot">=</span> <span class="fl">0.5</span></span>
+<span id="cb71-134"><a href="#cb71-134" aria-hidden="true" tabindex="-1"></a><span class="fu">dibuja.criterio.Hurwicz</span>(tabla1, <span class="at">favorable =</span> T)</span>
+<span id="cb71-135"><a href="#cb71-135" aria-hidden="true" tabindex="-1"></a><span class="fu">dibuja.criterio.Hurwicz_Intervalos</span>(tabla1, <span class="at">favorable =</span> T)</span>
+<span id="cb71-136"><a href="#cb71-136" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb71-137"><a href="#cb71-137" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-138"><a href="#cb71-138" aria-hidden="true" tabindex="-1"></a><span class="fu">### Criterio de Savage</span></span>
+<span id="cb71-139"><a href="#cb71-139" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-140"><a href="#cb71-140" aria-hidden="true" tabindex="-1"></a>El criterio de Savage (criterio del mínimo arrepentimiento) busca la alternativa que minimiza la pérdida por no haber elegido la mejor opción en cada estado. Es decir, se elige aquella cuyo peor “arrepentimiento” sea el más pequeño.</span>
+<span id="cb71-141"><a href="#cb71-141" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-144"><a href="#cb71-144" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb71-145"><a href="#cb71-145" aria-hidden="true" tabindex="-1"></a>sol_14 <span class="ot">=</span> <span class="fu">criterio.Savage</span>(tabla1, <span class="at">favorable =</span> T)</span>
+<span id="cb71-146"><a href="#cb71-146" aria-hidden="true" tabindex="-1"></a>sol_14</span>
+<span id="cb71-147"><a href="#cb71-147" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb71-148"><a href="#cb71-148" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-149"><a href="#cb71-149" aria-hidden="true" tabindex="-1"></a>La mejor alternativa según el criterio de Savage, es la alternativa 2.</span>
+<span id="cb71-150"><a href="#cb71-150" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-151"><a href="#cb71-151" aria-hidden="true" tabindex="-1"></a><span class="fu">### Criterio de Laplace</span></span>
+<span id="cb71-152"><a href="#cb71-152" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-153"><a href="#cb71-153" aria-hidden="true" tabindex="-1"></a>El criterio de Laplace asume que todos los estados son igualmente probables, y elige la alternativa con el mayor beneficio medio.</span>
+<span id="cb71-154"><a href="#cb71-154" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-157"><a href="#cb71-157" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb71-158"><a href="#cb71-158" aria-hidden="true" tabindex="-1"></a>sol_15 <span class="ot">=</span> <span class="fu">criterio.Laplace</span>(tabla1, <span class="at">favorable =</span> T)</span>
+<span id="cb71-159"><a href="#cb71-159" aria-hidden="true" tabindex="-1"></a>sol_15</span>
+<span id="cb71-160"><a href="#cb71-160" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb71-161"><a href="#cb71-161" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-162"><a href="#cb71-162" aria-hidden="true" tabindex="-1"></a>La mejor alternativa según el criterio de Laplace, es la alternativa 3.</span>
+<span id="cb71-163"><a href="#cb71-163" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-164"><a href="#cb71-164" aria-hidden="true" tabindex="-1"></a><span class="fu">### Criterio del punto ideal</span></span>
+<span id="cb71-165"><a href="#cb71-165" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-166"><a href="#cb71-166" aria-hidden="true" tabindex="-1"></a>El criterio del punto ideal busca la alternativa más cercana al punto ideal, es decir, aquella que más se aproxima simultáneamente al máximo beneficio posible en todos los estados.</span>
+<span id="cb71-167"><a href="#cb71-167" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-170"><a href="#cb71-170" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb71-171"><a href="#cb71-171" aria-hidden="true" tabindex="-1"></a>sol_16 <span class="ot">=</span> <span class="fu">criterio.PuntoIdeal</span>(tabla1, <span class="at">favorable =</span> T)</span>
+<span id="cb71-172"><a href="#cb71-172" aria-hidden="true" tabindex="-1"></a>sol_16</span>
+<span id="cb71-173"><a href="#cb71-173" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb71-174"><a href="#cb71-174" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-175"><a href="#cb71-175" aria-hidden="true" tabindex="-1"></a>La mejor alternativa según el criterio del punto ideal, es la alternativa 2.</span>
+<span id="cb71-176"><a href="#cb71-176" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-177"><a href="#cb71-177" aria-hidden="true" tabindex="-1"></a><span class="fu">## Resolución de costes</span></span>
+<span id="cb71-178"><a href="#cb71-178" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-179"><a href="#cb71-179" aria-hidden="true" tabindex="-1"></a>Vamos a resolver esta matriz de valores para el caso desfavorable, en cada uno de los criterios dados en la asignatura.</span>
+<span id="cb71-180"><a href="#cb71-180" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-181"><a href="#cb71-181" aria-hidden="true" tabindex="-1"></a><span class="fu">### Criterio de Wald o pesimista</span></span>
+<span id="cb71-182"><a href="#cb71-182" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-183"><a href="#cb71-183" aria-hidden="true" tabindex="-1"></a>El criterio de Wald selecciona la alternativa cuyo peor resultado sea el más bajo posible.\</span>
+<span id="cb71-184"><a href="#cb71-184" aria-hidden="true" tabindex="-1"></a>Es decir, asume una postura pesimista: se elige la opción que garantiza el menor coste máximo.</span>
+<span id="cb71-185"><a href="#cb71-185" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-188"><a href="#cb71-188" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb71-189"><a href="#cb71-189" aria-hidden="true" tabindex="-1"></a>sol_21 <span class="ot">=</span> <span class="fu">criterio.Wald</span>(tabla1, <span class="at">favorable =</span> F)</span>
+<span id="cb71-190"><a href="#cb71-190" aria-hidden="true" tabindex="-1"></a>sol_21</span>
+<span id="cb71-191"><a href="#cb71-191" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-192"><a href="#cb71-192" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb71-193"><a href="#cb71-193" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-194"><a href="#cb71-194" aria-hidden="true" tabindex="-1"></a>La mejor alternativa según el criterio de Wald, es la alternativa 2.</span>
+<span id="cb71-195"><a href="#cb71-195" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-196"><a href="#cb71-196" aria-hidden="true" tabindex="-1"></a><span class="fu">### Criterio optimista</span></span>
+<span id="cb71-197"><a href="#cb71-197" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-198"><a href="#cb71-198" aria-hidden="true" tabindex="-1"></a>El criterio optimista (también llamado de Minimin) elige la alternativa con el menor coste posible, suponiendo que siempre ocurrirá el mejor escenario.</span>
+<span id="cb71-199"><a href="#cb71-199" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-202"><a href="#cb71-202" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb71-203"><a href="#cb71-203" aria-hidden="true" tabindex="-1"></a>sol_22 <span class="ot">=</span> <span class="fu">criterio.Optimista</span>(tabla1, <span class="at">favorable =</span> F)</span>
+<span id="cb71-204"><a href="#cb71-204" aria-hidden="true" tabindex="-1"></a>sol_22</span>
+<span id="cb71-205"><a href="#cb71-205" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb71-206"><a href="#cb71-206" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-207"><a href="#cb71-207" aria-hidden="true" tabindex="-1"></a>La mejor alternativa según el criterio optimista es la alternativa 3.</span>
+<span id="cb71-208"><a href="#cb71-208" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-209"><a href="#cb71-209" aria-hidden="true" tabindex="-1"></a><span class="fu">### Criterio de Hurwicz</span></span>
+<span id="cb71-210"><a href="#cb71-210" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-211"><a href="#cb71-211" aria-hidden="true" tabindex="-1"></a>Este criterio combina el pesimismo y el optimismo mediante un parámetro α (alfa) entre 0 y 1. Este se calcula como una media ponderada entre el mejor coste (mínimo) (ponderado por α) y el peor coste (máximo) (ponderado por 1−α).</span>
+<span id="cb71-212"><a href="#cb71-212" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-213"><a href="#cb71-213" aria-hidden="true" tabindex="-1"></a>Vamos a suponer un nivel de alfa tal que **α = 0.5.**</span>
+<span id="cb71-214"><a href="#cb71-214" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-217"><a href="#cb71-217" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb71-218"><a href="#cb71-218" aria-hidden="true" tabindex="-1"></a>sol_23 <span class="ot">=</span> <span class="fu">criterio.Hurwicz</span>(tabla1, <span class="at">alfa =</span> <span class="fl">0.5</span>, <span class="at">favorable =</span> F)</span>
+<span id="cb71-219"><a href="#cb71-219" aria-hidden="true" tabindex="-1"></a>sol_23</span>
+<span id="cb71-220"><a href="#cb71-220" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb71-221"><a href="#cb71-221" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-222"><a href="#cb71-222" aria-hidden="true" tabindex="-1"></a>La mejor alternativa según el criterio de Hurwicz es la alternativa 3.</span>
+<span id="cb71-223"><a href="#cb71-223" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-224"><a href="#cb71-224" aria-hidden="true" tabindex="-1"></a>Construimos las gráficas asociadas al criterio de Hurwicz:</span>
+<span id="cb71-225"><a href="#cb71-225" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-228"><a href="#cb71-228" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb71-229"><a href="#cb71-229" aria-hidden="true" tabindex="-1"></a><span class="fu">dibuja.criterio.Hurwicz</span>(tabla1, <span class="at">favorable =</span> F)</span>
+<span id="cb71-230"><a href="#cb71-230" aria-hidden="true" tabindex="-1"></a><span class="fu">dibuja.criterio.Hurwicz_Intervalos</span>(tabla1, <span class="at">favorable =</span> F)</span>
+<span id="cb71-231"><a href="#cb71-231" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb71-232"><a href="#cb71-232" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-233"><a href="#cb71-233" aria-hidden="true" tabindex="-1"></a><span class="fu">### Criterio de Savage</span></span>
+<span id="cb71-234"><a href="#cb71-234" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-235"><a href="#cb71-235" aria-hidden="true" tabindex="-1"></a>El criterio de Savage (criterio del mínimo arrepentimiento) busca la alternativa que minimiza la pérdida por haber elegido la opción más costosa en cada estado. Se elige la alternativa cuyo peor arrepentimiento (coste adicional) sea el menor posible.</span>
+<span id="cb71-236"><a href="#cb71-236" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-239"><a href="#cb71-239" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb71-240"><a href="#cb71-240" aria-hidden="true" tabindex="-1"></a>sol_24 <span class="ot">=</span> <span class="fu">criterio.Savage</span>(tabla1, <span class="at">favorable =</span> F)</span>
+<span id="cb71-241"><a href="#cb71-241" aria-hidden="true" tabindex="-1"></a>sol_24</span>
+<span id="cb71-242"><a href="#cb71-242" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb71-243"><a href="#cb71-243" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-244"><a href="#cb71-244" aria-hidden="true" tabindex="-1"></a>La mejor alternativa según el criterio de Savage es la alternativa 2.</span>
+<span id="cb71-245"><a href="#cb71-245" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-246"><a href="#cb71-246" aria-hidden="true" tabindex="-1"></a><span class="fu">### Criterio de Laplace</span></span>
+<span id="cb71-247"><a href="#cb71-247" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-248"><a href="#cb71-248" aria-hidden="true" tabindex="-1"></a>El criterio de Laplace asume que todos los estados son igualmente probables, y selecciona la alternativa con el menor coste medio.</span>
+<span id="cb71-249"><a href="#cb71-249" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-252"><a href="#cb71-252" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb71-253"><a href="#cb71-253" aria-hidden="true" tabindex="-1"></a>sol_25 <span class="ot">=</span> <span class="fu">criterio.Laplace</span>(tabla1, <span class="at">favorable =</span> F)</span>
+<span id="cb71-254"><a href="#cb71-254" aria-hidden="true" tabindex="-1"></a>sol_25</span>
+<span id="cb71-255"><a href="#cb71-255" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb71-256"><a href="#cb71-256" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-257"><a href="#cb71-257" aria-hidden="true" tabindex="-1"></a>La mejor alternativa según el criterio de Laplace es la alternativa 4.</span>
+<span id="cb71-258"><a href="#cb71-258" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-259"><a href="#cb71-259" aria-hidden="true" tabindex="-1"></a><span class="fu">### Criterio del punto ideal</span></span>
+<span id="cb71-260"><a href="#cb71-260" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-261"><a href="#cb71-261" aria-hidden="true" tabindex="-1"></a>El criterio del punto ideal busca la alternativa más cercana al punto ideal mínimo, es decir, aquella que más se aproxima simultáneamente al menor coste posible en todos los estados.</span>
+<span id="cb71-262"><a href="#cb71-262" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-265"><a href="#cb71-265" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb71-266"><a href="#cb71-266" aria-hidden="true" tabindex="-1"></a>sol_26 <span class="ot">=</span> <span class="fu">criterio.PuntoIdeal</span>(tabla1, <span class="at">favorable =</span> F)</span>
+<span id="cb71-267"><a href="#cb71-267" aria-hidden="true" tabindex="-1"></a>sol_26</span>
+<span id="cb71-268"><a href="#cb71-268" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb71-269"><a href="#cb71-269" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-270"><a href="#cb71-270" aria-hidden="true" tabindex="-1"></a>La mejor alternativa según el criterio del punto ideal es la alternativa 2.</span>
+<span id="cb71-271"><a href="#cb71-271" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-272"><a href="#cb71-272" aria-hidden="true" tabindex="-1"></a>\pagebreak</span>
+<span id="cb71-273"><a href="#cb71-273" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-274"><a href="#cb71-274" aria-hidden="true" tabindex="-1"></a><span class="fu"># Problema 2</span></span>
+<span id="cb71-275"><a href="#cb71-275" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-276"><a href="#cb71-276" aria-hidden="true" tabindex="-1"></a>Miguel está pensando en contratar un servicio de Internet para su hogar. Ha consultado varias compañías y le han dado los siguientes informes:</span>
+<span id="cb71-277"><a href="#cb71-277" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-278"><a href="#cb71-278" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Con Digi debe pagar un cuota mensual de 25€, pero la velocidad máxima solo estará disponible después de 6 meses; hasta entonces, solo tendrá la mitad de velocidad contratada.</span>
+<span id="cb71-279"><a href="#cb71-279" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-280"><a href="#cb71-280" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Con O2 puede disfrutar de la velocidad completa desde el primer mes, pero deberá pagar una cuota de 50€ al mes.</span>
+<span id="cb71-281"><a href="#cb71-281" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-282"><a href="#cb71-282" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Con Vodafone debe pagar 35€ al mes, lo que garantiza la velocidad completa, excepto en horas puntas, cuando la velocidad se reduce.</span>
+<span id="cb71-283"><a href="#cb71-283" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-284"><a href="#cb71-284" aria-hidden="true" tabindex="-1"></a>Miguel trabaja desde casa y necesita Internet para videollamadas frecuentes y descargas grandes de archivos. Supongamos que el coste asociado a la velocidad insuficiente son:</span>
+<span id="cb71-285"><a href="#cb71-285" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-286"><a href="#cb71-286" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Reducción en productividad y retrasos en descargas: 400€</span>
+<span id="cb71-287"><a href="#cb71-287" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-288"><a href="#cb71-288" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Problemas en videollamadas y reuniones importantes: 1000€</span>
+<span id="cb71-289"><a href="#cb71-289" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-290"><a href="#cb71-290" aria-hidden="true" tabindex="-1"></a>Miguel quiere evaluar cuál sería el coste total del primer año, considerando que podría tener meses de alta demanda de trabajo o meses de baja demanda, y cuál sería la mejor compañía a elegir.</span>
+<span id="cb71-291"><a href="#cb71-291" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-292"><a href="#cb71-292" aria-hidden="true" tabindex="-1"></a>\pagebreak</span>
+<span id="cb71-293"><a href="#cb71-293" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-294"><a href="#cb71-294" aria-hidden="true" tabindex="-1"></a><span class="fu"># Problema 3</span></span>
+<span id="cb71-295"><a href="#cb71-295" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-296"><a href="#cb71-296" aria-hidden="true" tabindex="-1"></a>Aplicar los criterios de decisión bajo incertidumbre a los problemas cuya matriz de valores numéricos vienen dadas en las tablas siguientes: Realizar tanto en situación favorable como desfavorable.</span>
+<span id="cb71-297"><a href="#cb71-297" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-298"><a href="#cb71-298" aria-hidden="true" tabindex="-1"></a>|     | e1  | e2  | e3  | e4  | e5  | e6  |</span>
+<span id="cb71-299"><a href="#cb71-299" aria-hidden="true" tabindex="-1"></a>|-----|-----|-----|-----|-----|-----|-----|</span>
+<span id="cb71-300"><a href="#cb71-300" aria-hidden="true" tabindex="-1"></a>| d1  | 740 | 800 | 500 | 250 | 690 | 900 |</span>
+<span id="cb71-301"><a href="#cb71-301" aria-hidden="true" tabindex="-1"></a>| d2  | 600 | 600 | 600 | 600 | 600 | 600 |</span>
+<span id="cb71-302"><a href="#cb71-302" aria-hidden="true" tabindex="-1"></a>| d3  | 120 | 50  | 90  | 300 | 250 | 10  |</span>
+<span id="cb71-303"><a href="#cb71-303" aria-hidden="true" tabindex="-1"></a>| d4  | 450 | 700 | 900 | 40  | 25  | 5   |</span>
+<span id="cb71-304"><a href="#cb71-304" aria-hidden="true" tabindex="-1"></a>| d5  | 150 | 200 | 500 | 220 | 430 | 400 |</span>
+<span id="cb71-305"><a href="#cb71-305" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-306"><a href="#cb71-306" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-307"><a href="#cb71-307" aria-hidden="true" tabindex="-1"></a><span class="fu">## Creación de la matriz</span></span>
+<span id="cb71-310"><a href="#cb71-310" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb71-311"><a href="#cb71-311" aria-hidden="true" tabindex="-1"></a>tb01a <span class="ot">=</span> <span class="fu">crea.tablaX</span>(<span class="fu">c</span>(<span class="dv">740</span>,<span class="dv">800</span>,<span class="dv">500</span>,<span class="dv">250</span>,<span class="dv">690</span>,<span class="dv">900</span>,</span>
+<span id="cb71-312"><a href="#cb71-312" aria-hidden="true" tabindex="-1"></a>                      <span class="dv">600</span>,<span class="dv">600</span>,<span class="dv">600</span>,<span class="dv">600</span>,<span class="dv">600</span>,<span class="dv">600</span>,</span>
+<span id="cb71-313"><a href="#cb71-313" aria-hidden="true" tabindex="-1"></a>                      <span class="dv">120</span>,<span class="dv">50</span>,<span class="dv">90</span>,<span class="dv">300</span>,<span class="dv">250</span>,<span class="dv">10</span>,</span>
+<span id="cb71-314"><a href="#cb71-314" aria-hidden="true" tabindex="-1"></a>                      <span class="dv">450</span>,<span class="dv">700</span>,<span class="dv">900</span>,<span class="dv">40</span>,<span class="dv">25</span>,<span class="dv">5</span>,</span>
+<span id="cb71-315"><a href="#cb71-315" aria-hidden="true" tabindex="-1"></a>                      <span class="dv">150</span>,<span class="dv">200</span>,<span class="dv">500</span>,<span class="dv">220</span>,<span class="dv">430</span>,<span class="dv">400</span>),<span class="at">numalternativas=</span><span class="dv">5</span>,<span class="at">numestados=</span><span class="dv">6</span>)</span>
+<span id="cb71-316"><a href="#cb71-316" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-317"><a href="#cb71-317" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-318"><a href="#cb71-318" aria-hidden="true" tabindex="-1"></a><span class="co"># Convertimos la tabla en un data.frame</span></span>
+<span id="cb71-319"><a href="#cb71-319" aria-hidden="true" tabindex="-1"></a>tabla_3 <span class="ot">=</span> <span class="fu">as.data.frame</span>(tb01a)</span>
+<span id="cb71-320"><a href="#cb71-320" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-321"><a href="#cb71-321" aria-hidden="true" tabindex="-1"></a><span class="co"># Presentamos la tabla de valores</span></span>
+<span id="cb71-322"><a href="#cb71-322" aria-hidden="true" tabindex="-1"></a><span class="fu">tt</span>(tabla_3, <span class="at">rownames =</span> T)</span>
+<span id="cb71-323"><a href="#cb71-323" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb71-324"><a href="#cb71-324" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-325"><a href="#cb71-325" aria-hidden="true" tabindex="-1"></a><span class="fu">## Solución de beneficios</span></span>
+<span id="cb71-326"><a href="#cb71-326" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-327"><a href="#cb71-327" aria-hidden="true" tabindex="-1"></a>Veámos las soluciones según los distintos criterios:</span>
+<span id="cb71-328"><a href="#cb71-328" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-329"><a href="#cb71-329" aria-hidden="true" tabindex="-1"></a><span class="fu">###  Criterio de Wald:</span></span>
+<span id="cb71-330"><a href="#cb71-330" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-333"><a href="#cb71-333" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb71-334"><a href="#cb71-334" aria-hidden="true" tabindex="-1"></a><span class="fu">criterio.Wald</span>(tb01a)</span>
+<span id="cb71-335"><a href="#cb71-335" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb71-336"><a href="#cb71-336" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-337"><a href="#cb71-337" aria-hidden="true" tabindex="-1"></a>El criterio de Wald nos indica que la mejor decisión es la alternativa d2 con un valor optimo de 600.</span>
+<span id="cb71-338"><a href="#cb71-338" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-339"><a href="#cb71-339" aria-hidden="true" tabindex="-1"></a><span class="fu">###  Método optimista:</span></span>
+<span id="cb71-340"><a href="#cb71-340" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-343"><a href="#cb71-343" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb71-344"><a href="#cb71-344" aria-hidden="true" tabindex="-1"></a><span class="fu">criterio.Optimista</span>(tb01a)</span>
+<span id="cb71-345"><a href="#cb71-345" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb71-346"><a href="#cb71-346" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-347"><a href="#cb71-347" aria-hidden="true" tabindex="-1"></a>El criterio optimista nos indica que la mejor decisión son las alternativas d1 o d4 con un valor optimo de 900.</span>
+<span id="cb71-348"><a href="#cb71-348" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-349"><a href="#cb71-349" aria-hidden="true" tabindex="-1"></a><span class="fu">###  Criterio de Hurwicz:</span></span>
+<span id="cb71-350"><a href="#cb71-350" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-353"><a href="#cb71-353" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb71-354"><a href="#cb71-354" aria-hidden="true" tabindex="-1"></a><span class="fu">criterio.Hurwicz</span>(tb01a,<span class="at">alfa=</span><span class="fl">0.5</span>)</span>
+<span id="cb71-355"><a href="#cb71-355" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb71-356"><a href="#cb71-356" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-357"><a href="#cb71-357" aria-hidden="true" tabindex="-1"></a>El criterio de Hurwicz nos indica que la mejor decisión para alpha=0.5 es la alternativa d2 con un valor optimo de 600.</span>
+<span id="cb71-358"><a href="#cb71-358" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-359"><a href="#cb71-359" aria-hidden="true" tabindex="-1"></a>Además, moviendo el alpha:</span>
+<span id="cb71-360"><a href="#cb71-360" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-363"><a href="#cb71-363" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb71-364"><a href="#cb71-364" aria-hidden="true" tabindex="-1"></a><span class="fu">dibuja.criterio.Hurwicz_Intervalos</span>(tb01a,T,T)</span>
+<span id="cb71-365"><a href="#cb71-365" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb71-366"><a href="#cb71-366" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-367"><a href="#cb71-367" aria-hidden="true" tabindex="-1"></a>Nos indica que para alpha entre 0 y 0.538 la mejor decisión es d2 y para alpha entre 0.538 y 1, la mejor decisión es d1.</span>
+<span id="cb71-368"><a href="#cb71-368" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-369"><a href="#cb71-369" aria-hidden="true" tabindex="-1"></a><span class="fu">###  Criterio de Savage:</span></span>
+<span id="cb71-370"><a href="#cb71-370" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-373"><a href="#cb71-373" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb71-374"><a href="#cb71-374" aria-hidden="true" tabindex="-1"></a><span class="fu">criterio.Savage</span>(tb01a)</span>
+<span id="cb71-375"><a href="#cb71-375" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb71-376"><a href="#cb71-376" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-377"><a href="#cb71-377" aria-hidden="true" tabindex="-1"></a>El criterio de Savage nos indica que la mejor decisión es la alternativa d2 con un valor optimo de 300.</span>
+<span id="cb71-378"><a href="#cb71-378" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-379"><a href="#cb71-379" aria-hidden="true" tabindex="-1"></a><span class="fu">###  Criterio de Laplace:</span></span>
+<span id="cb71-380"><a href="#cb71-380" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-383"><a href="#cb71-383" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb71-384"><a href="#cb71-384" aria-hidden="true" tabindex="-1"></a><span class="fu">criterio.Laplace</span>(tb01a)</span>
+<span id="cb71-385"><a href="#cb71-385" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb71-386"><a href="#cb71-386" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-387"><a href="#cb71-387" aria-hidden="true" tabindex="-1"></a>El criterio de Laplace nos indica que la mejor decisión es la alternativa d1 con un valor optimo de 646.6667.</span>
+<span id="cb71-388"><a href="#cb71-388" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-389"><a href="#cb71-389" aria-hidden="true" tabindex="-1"></a><span class="fu">###  Criterio del Punto Ideal:</span></span>
+<span id="cb71-390"><a href="#cb71-390" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-393"><a href="#cb71-393" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb71-394"><a href="#cb71-394" aria-hidden="true" tabindex="-1"></a><span class="fu">criterio.PuntoIdeal</span>(tb01a)</span>
+<span id="cb71-395"><a href="#cb71-395" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb71-396"><a href="#cb71-396" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-397"><a href="#cb71-397" aria-hidden="true" tabindex="-1"></a>El criterio del Punto Ideal nos indica que la mejor decisión es la alternativa d2 con un valor optimo de 497.6947.</span>
+<span id="cb71-398"><a href="#cb71-398" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-399"><a href="#cb71-399" aria-hidden="true" tabindex="-1"></a>CONCLUSIÓN:</span>
+<span id="cb71-400"><a href="#cb71-400" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-401"><a href="#cb71-401" aria-hidden="true" tabindex="-1"></a>En situación favorable, según los criterios de decisión bajo incertidumbre, las mejores decisiones son la alternativa d2 (Criterio de Wald, Hurwicz, Savage y Punto Ideal) o la alternativa d1 (Criterio optimista y Laplace).</span>
+<span id="cb71-402"><a href="#cb71-402" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-403"><a href="#cb71-403" aria-hidden="true" tabindex="-1"></a>Si me tuviera que quedar con una única alternativa, elegiría la alternativa d2, ya que es la que más veces aparece como mejor decisión según los distintos criterios.</span>
+<span id="cb71-404"><a href="#cb71-404" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-405"><a href="#cb71-405" aria-hidden="true" tabindex="-1"></a>\pagebreak</span>
+<span id="cb71-406"><a href="#cb71-406" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-407"><a href="#cb71-407" aria-hidden="true" tabindex="-1"></a><span class="fu">## Solución de costes:</span></span>
+<span id="cb71-408"><a href="#cb71-408" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-409"><a href="#cb71-409" aria-hidden="true" tabindex="-1"></a><span class="fu">###  Criterio de Wald:</span></span>
+<span id="cb71-410"><a href="#cb71-410" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-413"><a href="#cb71-413" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb71-414"><a href="#cb71-414" aria-hidden="true" tabindex="-1"></a><span class="fu">criterio.Wald</span>(tb01a,<span class="at">favorable =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb71-415"><a href="#cb71-415" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb71-416"><a href="#cb71-416" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-417"><a href="#cb71-417" aria-hidden="true" tabindex="-1"></a>El criterio de Wald nos indica que la mejor decisión es la alternativa d3 con un valor optimo de 300.</span>
+<span id="cb71-418"><a href="#cb71-418" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-419"><a href="#cb71-419" aria-hidden="true" tabindex="-1"></a><span class="fu">###  Método optimista:</span></span>
+<span id="cb71-420"><a href="#cb71-420" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-423"><a href="#cb71-423" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb71-424"><a href="#cb71-424" aria-hidden="true" tabindex="-1"></a><span class="fu">criterio.Optimista</span>(tb01a,<span class="at">favorable =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb71-425"><a href="#cb71-425" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb71-426"><a href="#cb71-426" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-427"><a href="#cb71-427" aria-hidden="true" tabindex="-1"></a>El criterio optimista nos indica que la mejor decisión es la alternativa d4 con un valor optimo de 5.</span>
+<span id="cb71-428"><a href="#cb71-428" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-429"><a href="#cb71-429" aria-hidden="true" tabindex="-1"></a><span class="fu">###  Criterio de Hurwicz:</span></span>
+<span id="cb71-430"><a href="#cb71-430" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-433"><a href="#cb71-433" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb71-434"><a href="#cb71-434" aria-hidden="true" tabindex="-1"></a><span class="fu">criterio.Hurwicz</span>(tb01a,<span class="at">alfa=</span><span class="fl">0.5</span>,<span class="at">favorable =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb71-435"><a href="#cb71-435" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb71-436"><a href="#cb71-436" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-437"><a href="#cb71-437" aria-hidden="true" tabindex="-1"></a>El criterio de Hurwicz nos indica que la mejor decisión para alpha=0.5 es la alternativa d3 con un valor optimo de 155.</span>
+<span id="cb71-438"><a href="#cb71-438" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-439"><a href="#cb71-439" aria-hidden="true" tabindex="-1"></a>Además, moviendo el alpha:</span>
+<span id="cb71-440"><a href="#cb71-440" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-443"><a href="#cb71-443" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb71-444"><a href="#cb71-444" aria-hidden="true" tabindex="-1"></a><span class="fu">dibuja.criterio.Hurwicz_Intervalos</span>(tb01a,F,T)</span>
+<span id="cb71-445"><a href="#cb71-445" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb71-446"><a href="#cb71-446" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-447"><a href="#cb71-447" aria-hidden="true" tabindex="-1"></a>Nos indica que para alpha entre 0 y 0.992 la mejor decisión es d3 y para alpha entre 0.992 y 1, la mejor decisión es d4.</span>
+<span id="cb71-448"><a href="#cb71-448" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-449"><a href="#cb71-449" aria-hidden="true" tabindex="-1"></a><span class="fu">###  Criterio de Savage:</span></span>
+<span id="cb71-450"><a href="#cb71-450" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-453"><a href="#cb71-453" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb71-454"><a href="#cb71-454" aria-hidden="true" tabindex="-1"></a><span class="fu">criterio.Savage</span>(tb01a,<span class="at">favorable =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb71-455"><a href="#cb71-455" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb71-456"><a href="#cb71-456" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-457"><a href="#cb71-457" aria-hidden="true" tabindex="-1"></a>El criterio de Savage nos indica que la mejor decisión es la alternativa d3 con un valor optimo de 260.</span>
+<span id="cb71-458"><a href="#cb71-458" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-459"><a href="#cb71-459" aria-hidden="true" tabindex="-1"></a><span class="fu">###  Criterio de Laplace:</span></span>
+<span id="cb71-460"><a href="#cb71-460" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-463"><a href="#cb71-463" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb71-464"><a href="#cb71-464" aria-hidden="true" tabindex="-1"></a><span class="fu">criterio.Laplace</span>(tb01a,<span class="at">favorable =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb71-465"><a href="#cb71-465" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb71-466"><a href="#cb71-466" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-467"><a href="#cb71-467" aria-hidden="true" tabindex="-1"></a>El criterio de Laplace nos indica que la mejor decisión es la alternativa d1 con un valor optimo de 646.6667.</span>
+<span id="cb71-468"><a href="#cb71-468" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-469"><a href="#cb71-469" aria-hidden="true" tabindex="-1"></a><span class="fu">###  Criterio del Punto Ideal:</span></span>
+<span id="cb71-470"><a href="#cb71-470" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-473"><a href="#cb71-473" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb71-474"><a href="#cb71-474" aria-hidden="true" tabindex="-1"></a><span class="fu">criterio.PuntoIdeal</span>(tb01a,<span class="at">favorable =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb71-475"><a href="#cb71-475" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb71-476"><a href="#cb71-476" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-477"><a href="#cb71-477" aria-hidden="true" tabindex="-1"></a>El criterio del Punto Ideal nos indica que la mejor decisión es la alternativa d3 con un valor optimo de 343.875.</span>
+<span id="cb71-478"><a href="#cb71-478" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-479"><a href="#cb71-479" aria-hidden="true" tabindex="-1"></a>CONCLUSIÓN:</span>
+<span id="cb71-480"><a href="#cb71-480" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-481"><a href="#cb71-481" aria-hidden="true" tabindex="-1"></a>En situación de costes, según los criterios de decisión bajo incertidumbre, las mejores decisiones son la alternativa d3 (Criterio de Wald, Hurwicz, Savage y Punto Ideal), la alternativa d4 (Criterio optimista) o la alternativa d1 (Criterio de Laplace).</span>
+<span id="cb71-482"><a href="#cb71-482" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-483"><a href="#cb71-483" aria-hidden="true" tabindex="-1"></a>Si me tuviera que quedar con una única alternativa, elegiría la alternativa d3, ya que es la que más veces aparece como mejor decisión según los distintos criterios.</span>
+<span id="cb71-484"><a href="#cb71-484" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-485"><a href="#cb71-485" aria-hidden="true" tabindex="-1"></a>\pagebreak</span>
+<span id="cb71-486"><a href="#cb71-486" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-487"><a href="#cb71-487" aria-hidden="true" tabindex="-1"></a><span class="fu"># Problema 4</span></span>
+<span id="cb71-488"><a href="#cb71-488" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-489"><a href="#cb71-489" aria-hidden="true" tabindex="-1"></a>Lucía y Marco tienen que mudarse este sábado y no se ponen de acuerdo sobre cómo hacerlo. Barajan estas opciones: Opción A: Alquilar furgoneta y hacerlo ellos • Pack de 3 horas de furgoneta con km incluidos: 110 €. • Combustible: 12 €. • Hora extra: 35 €. • Si llueve, comprarían fundas/plásticos 8 €. • Si el ascensor del piso nuevo falla, necesitarían 3 horas extra y pedir ayuda puntual 30 € para subir los muebles pesados.</span>
+<span id="cb71-490"><a href="#cb71-490" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-491"><a href="#cb71-491" aria-hidden="true" tabindex="-1"></a>Opción B: Empresa “AhorraMudanzas” • Tarifa base 2 horas: 130 € (furgón y carga/descarga básicos). • Hora extra: 35 €. • Con lluvia o tráfico, suelen tardar 1 hora más. • Si el ascensor está averiado, estiman 2 horas extra y recargo 20 € por subir por escaleras.</span>
+<span id="cb71-492"><a href="#cb71-492" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-493"><a href="#cb71-493" aria-hidden="true" tabindex="-1"></a>Opción C: Empresa “PremiumBox” • Tarifa plana hasta 4 horas: 220 € • Hora extra a partir de la 5.ª: 30 €. • Con lluvia o tráfico normalmente no hay recargos. • Si el ascensor falla, prevén 1 hora extra.</span>
+<span id="cb71-494"><a href="#cb71-494" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-495"><a href="#cb71-495" aria-hidden="true" tabindex="-1"></a>Estados de la naturaleza:</span>
+<span id="cb71-496"><a href="#cb71-496" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-497"><a href="#cb71-497" aria-hidden="true" tabindex="-1"></a>Mudanza fluida (sin lluvia/tráfico y ascensores funcionando).</span>
+<span id="cb71-498"><a href="#cb71-498" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-499"><a href="#cb71-499" aria-hidden="true" tabindex="-1"></a>Lluvia o tráfico moderado.</span>
+<span id="cb71-500"><a href="#cb71-500" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-501"><a href="#cb71-501" aria-hidden="true" tabindex="-1"></a>Ascensor averiado.</span>
+<span id="cb71-502"><a href="#cb71-502" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-503"><a href="#cb71-503" aria-hidden="true" tabindex="-1"></a>SOLUCIÓN:</span>
+<span id="cb71-504"><a href="#cb71-504" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-505"><a href="#cb71-505" aria-hidden="true" tabindex="-1"></a>Estamos ante un problema de decisión con un solo decisor. Puesto que lo que queremos es minimizar el gasto de la mudanza, nos encontramos con un modelo de costos.</span>
+<span id="cb71-506"><a href="#cb71-506" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-507"><a href="#cb71-507" aria-hidden="true" tabindex="-1"></a>Se nos presentan 3 alternativas:</span>
+<span id="cb71-508"><a href="#cb71-508" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-509"><a href="#cb71-509" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>d1: Opción A: Alquilar furgoneta y hacerlo ellos.</span>
+<span id="cb71-510"><a href="#cb71-510" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>d2: Opción B: Empresa “AhorraMudanzas”.</span>
+<span id="cb71-511"><a href="#cb71-511" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>d3: Opción C: Empresa “PremiumBox”.</span>
+<span id="cb71-512"><a href="#cb71-512" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-513"><a href="#cb71-513" aria-hidden="true" tabindex="-1"></a>Los estados de la naturaleza son:</span>
+<span id="cb71-514"><a href="#cb71-514" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-515"><a href="#cb71-515" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>e1: Mudanza fluida (sin lluvia/tráfico y ascensores funcionando).</span>
+<span id="cb71-516"><a href="#cb71-516" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>e2: Lluvia o tráfico moderado, pero con ascensores en orden.</span>
+<span id="cb71-517"><a href="#cb71-517" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>e3: Ascensor averiado, pero sin lluvia ni tráfico.</span>
+<span id="cb71-518"><a href="#cb71-518" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-519"><a href="#cb71-519" aria-hidden="true" tabindex="-1"></a><span class="fu">## Valoraciones:</span></span>
+<span id="cb71-520"><a href="#cb71-520" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-521"><a href="#cb71-521" aria-hidden="true" tabindex="-1"></a>Para e1:</span>
+<span id="cb71-522"><a href="#cb71-522" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-525"><a href="#cb71-525" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb71-526"><a href="#cb71-526" aria-hidden="true" tabindex="-1"></a>m11 <span class="ot">=</span> <span class="dv">110</span><span class="sc">+</span><span class="dv">12</span></span>
+<span id="cb71-527"><a href="#cb71-527" aria-hidden="true" tabindex="-1"></a>m21 <span class="ot">=</span> <span class="dv">130</span></span>
+<span id="cb71-528"><a href="#cb71-528" aria-hidden="true" tabindex="-1"></a>m31 <span class="ot">=</span> <span class="dv">220</span></span>
+<span id="cb71-529"><a href="#cb71-529" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb71-530"><a href="#cb71-530" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-531"><a href="#cb71-531" aria-hidden="true" tabindex="-1"></a>Para e2:</span>
+<span id="cb71-532"><a href="#cb71-532" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-535"><a href="#cb71-535" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb71-536"><a href="#cb71-536" aria-hidden="true" tabindex="-1"></a>m12 <span class="ot">=</span> <span class="dv">110</span><span class="sc">+</span><span class="dv">12</span><span class="sc">+</span><span class="dv">8</span></span>
+<span id="cb71-537"><a href="#cb71-537" aria-hidden="true" tabindex="-1"></a>m22 <span class="ot">=</span> <span class="dv">130</span><span class="sc">+</span><span class="dv">35</span></span>
+<span id="cb71-538"><a href="#cb71-538" aria-hidden="true" tabindex="-1"></a>m32 <span class="ot">=</span> <span class="dv">220</span></span>
+<span id="cb71-539"><a href="#cb71-539" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb71-540"><a href="#cb71-540" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-541"><a href="#cb71-541" aria-hidden="true" tabindex="-1"></a>Para e3:</span>
+<span id="cb71-542"><a href="#cb71-542" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-545"><a href="#cb71-545" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb71-546"><a href="#cb71-546" aria-hidden="true" tabindex="-1"></a>m13 <span class="ot">=</span> <span class="dv">110</span><span class="sc">+</span><span class="dv">12</span><span class="sc">+</span><span class="dv">30</span><span class="sc">+</span><span class="dv">3</span><span class="sc">*</span><span class="dv">35</span></span>
+<span id="cb71-547"><a href="#cb71-547" aria-hidden="true" tabindex="-1"></a>m23 <span class="ot">=</span> <span class="dv">130</span><span class="sc">+</span><span class="dv">20</span><span class="sc">+</span><span class="dv">2</span><span class="sc">*</span><span class="dv">35</span></span>
+<span id="cb71-548"><a href="#cb71-548" aria-hidden="true" tabindex="-1"></a>m33 <span class="ot">=</span> <span class="dv">220</span><span class="sc">+</span><span class="dv">30</span></span>
+<span id="cb71-549"><a href="#cb71-549" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb71-550"><a href="#cb71-550" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-551"><a href="#cb71-551" aria-hidden="true" tabindex="-1"></a><span class="fu">## Creación de la matriz</span></span>
+<span id="cb71-552"><a href="#cb71-552" aria-hidden="true" tabindex="-1"></a>Construimos la tabla de decisiones:</span>
+<span id="cb71-553"><a href="#cb71-553" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-556"><a href="#cb71-556" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb71-557"><a href="#cb71-557" aria-hidden="true" tabindex="-1"></a>tb02 <span class="ot">=</span> <span class="fu">crea.tablaX</span>(<span class="fu">c</span>(m11,m12,m13,</span>
+<span id="cb71-558"><a href="#cb71-558" aria-hidden="true" tabindex="-1"></a>                      m21,m22,m23,</span>
+<span id="cb71-559"><a href="#cb71-559" aria-hidden="true" tabindex="-1"></a>                      m31,m32,m33),<span class="at">numalternativas=</span><span class="dv">3</span>,<span class="at">numestados=</span><span class="dv">3</span>)</span>
+<span id="cb71-560"><a href="#cb71-560" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-561"><a href="#cb71-561" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-562"><a href="#cb71-562" aria-hidden="true" tabindex="-1"></a><span class="co"># Convertimos la tabla en un data.frame</span></span>
+<span id="cb71-563"><a href="#cb71-563" aria-hidden="true" tabindex="-1"></a>tabla_4 <span class="ot">=</span> <span class="fu">as.data.frame</span>(tb02)</span>
+<span id="cb71-564"><a href="#cb71-564" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-565"><a href="#cb71-565" aria-hidden="true" tabindex="-1"></a><span class="co"># Presentamos la tabla de valores</span></span>
+<span id="cb71-566"><a href="#cb71-566" aria-hidden="true" tabindex="-1"></a><span class="fu">tt</span>(tabla_4, <span class="at">rownames =</span> T)</span>
+<span id="cb71-567"><a href="#cb71-567" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb71-568"><a href="#cb71-568" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-569"><a href="#cb71-569" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-570"><a href="#cb71-570" aria-hidden="true" tabindex="-1"></a><span class="fu">## Solución de costes:</span></span>
+<span id="cb71-571"><a href="#cb71-571" aria-hidden="true" tabindex="-1"></a>En esta ocasión, vamos a aplicar todos los criterios a la vez con un único comando:</span>
+<span id="cb71-572"><a href="#cb71-572" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-575"><a href="#cb71-575" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb71-576"><a href="#cb71-576" aria-hidden="true" tabindex="-1"></a><span class="fu">criterio.Todos</span>(tb02,<span class="at">alfa=</span><span class="fl">0.5</span>,<span class="at">favorable =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb71-577"><a href="#cb71-577" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb71-578"><a href="#cb71-578" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-579"><a href="#cb71-579" aria-hidden="true" tabindex="-1"></a>Veamos también el criterio de Hurwicz variando alpha:</span>
+<span id="cb71-580"><a href="#cb71-580" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-583"><a href="#cb71-583" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb71-584"><a href="#cb71-584" aria-hidden="true" tabindex="-1"></a><span class="fu">dibuja.criterio.Hurwicz_Intervalos</span>(tb02,F,T)</span>
+<span id="cb71-585"><a href="#cb71-585" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb71-586"><a href="#cb71-586" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-587"><a href="#cb71-587" aria-hidden="true" tabindex="-1"></a>Vemos que para alpha entre 0 y 0.822 la mejor decisión es d2 y para alpha entre 0.822 y 1, la mejor decisión es d1.</span>
+<span id="cb71-588"><a href="#cb71-588" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-589"><a href="#cb71-589" aria-hidden="true" tabindex="-1"></a>Conclusión:</span>
+<span id="cb71-590"><a href="#cb71-590" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-591"><a href="#cb71-591" aria-hidden="true" tabindex="-1"></a>Observando los resultados de la tabla, la mejor decisión es la alternativa 2 (Empresa “AhorraMudanzas"). Esto es debido a que en 4 de los 6 criterios se toma como la mejor opción.</span>
+</code><button title="Copiar al portapapeles" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 

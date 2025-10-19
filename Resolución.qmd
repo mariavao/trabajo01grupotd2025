@@ -158,7 +158,7 @@ La mejor alternativa según el criterio del punto ideal, es la alternativa 2.
 
 Vamos a resolver esta matriz de valores para el caso desfavorable, en cada uno de los criterios dados en la asignatura.
 
-### Criterio de Wald o pesimista 
+### Criterio de Wald o pesimista
 
 El criterio de Wald selecciona la alternativa cuyo peor resultado sea el más bajo posible.\
 Es decir, asume una postura pesimista: se elige la opción que garantiza el menor coste máximo.
@@ -254,3 +254,262 @@ Miguel trabaja desde casa y necesita Internet para videollamadas frecuentes y de
 -   Problemas en videollamadas y reuniones importantes: 1000€
 
 Miguel quiere evaluar cuál sería el coste total del primer año, considerando que podría tener meses de alta demanda de trabajo o meses de baja demanda, y cuál sería la mejor compañía a elegir.
+
+\pagebreak
+
+# Problema 3
+
+Aplicar los criterios de decisión bajo incertidumbre a los problemas cuya matriz de valores numéricos vienen dadas en las tablas siguientes: Realizar tanto en situación favorable como desfavorable.
+
+|     | e1  | e2  | e3  | e4  | e5  | e6  |
+|-----|-----|-----|-----|-----|-----|-----|
+| d1  | 740 | 800 | 500 | 250 | 690 | 900 |
+| d2  | 600 | 600 | 600 | 600 | 600 | 600 |
+| d3  | 120 | 50  | 90  | 300 | 250 | 10  |
+| d4  | 450 | 700 | 900 | 40  | 25  | 5   |
+| d5  | 150 | 200 | 500 | 220 | 430 | 400 |
+
+
+## Creación de la matriz
+```{r}
+tb01a = crea.tablaX(c(740,800,500,250,690,900,
+                      600,600,600,600,600,600,
+                      120,50,90,300,250,10,
+                      450,700,900,40,25,5,
+                      150,200,500,220,430,400),numalternativas=5,numestados=6)
+
+
+# Convertimos la tabla en un data.frame
+tabla_3 = as.data.frame(tb01a)
+
+# Presentamos la tabla de valores
+tt(tabla_3, rownames = T)
+```
+
+## Solución de beneficios
+
+Veámos las soluciones según los distintos criterios:
+
+###  Criterio de Wald:
+
+```{r}
+criterio.Wald(tb01a)
+```
+
+El criterio de Wald nos indica que la mejor decisión es la alternativa d2 con un valor optimo de 600.
+
+###  Método optimista:
+
+```{r}
+criterio.Optimista(tb01a)
+```
+
+El criterio optimista nos indica que la mejor decisión son las alternativas d1 o d4 con un valor optimo de 900.
+
+###  Criterio de Hurwicz:
+
+```{r}
+criterio.Hurwicz(tb01a,alfa=0.5)
+```
+
+El criterio de Hurwicz nos indica que la mejor decisión para alpha=0.5 es la alternativa d2 con un valor optimo de 600.
+
+Además, moviendo el alpha:
+
+```{r}
+dibuja.criterio.Hurwicz_Intervalos(tb01a,T,T)
+```
+
+Nos indica que para alpha entre 0 y 0.538 la mejor decisión es d2 y para alpha entre 0.538 y 1, la mejor decisión es d1.
+
+###  Criterio de Savage:
+
+```{r}
+criterio.Savage(tb01a)
+```
+
+El criterio de Savage nos indica que la mejor decisión es la alternativa d2 con un valor optimo de 300.
+
+###  Criterio de Laplace:
+
+```{r}
+criterio.Laplace(tb01a)
+```
+
+El criterio de Laplace nos indica que la mejor decisión es la alternativa d1 con un valor optimo de 646.6667.
+
+###  Criterio del Punto Ideal:
+
+```{r}
+criterio.PuntoIdeal(tb01a)
+```
+
+El criterio del Punto Ideal nos indica que la mejor decisión es la alternativa d2 con un valor optimo de 497.6947.
+
+CONCLUSIÓN:
+
+En situación favorable, según los criterios de decisión bajo incertidumbre, las mejores decisiones son la alternativa d2 (Criterio de Wald, Hurwicz, Savage y Punto Ideal) o la alternativa d1 (Criterio optimista y Laplace).
+
+Si me tuviera que quedar con una única alternativa, elegiría la alternativa d2, ya que es la que más veces aparece como mejor decisión según los distintos criterios.
+
+\pagebreak
+
+## Solución de costes:
+
+###  Criterio de Wald:
+
+```{r}
+criterio.Wald(tb01a,favorable = FALSE)
+```
+
+El criterio de Wald nos indica que la mejor decisión es la alternativa d3 con un valor optimo de 300.
+
+###  Método optimista:
+
+```{r}
+criterio.Optimista(tb01a,favorable = FALSE)
+```
+
+El criterio optimista nos indica que la mejor decisión es la alternativa d4 con un valor optimo de 5.
+
+###  Criterio de Hurwicz:
+
+```{r}
+criterio.Hurwicz(tb01a,alfa=0.5,favorable = FALSE)
+```
+
+El criterio de Hurwicz nos indica que la mejor decisión para alpha=0.5 es la alternativa d3 con un valor optimo de 155.
+
+Además, moviendo el alpha:
+
+```{r}
+dibuja.criterio.Hurwicz_Intervalos(tb01a,F,T)
+```
+
+Nos indica que para alpha entre 0 y 0.992 la mejor decisión es d3 y para alpha entre 0.992 y 1, la mejor decisión es d4.
+
+###  Criterio de Savage:
+
+```{r}
+criterio.Savage(tb01a,favorable = FALSE)
+```
+
+El criterio de Savage nos indica que la mejor decisión es la alternativa d3 con un valor optimo de 260.
+
+###  Criterio de Laplace:
+
+```{r}
+criterio.Laplace(tb01a,favorable = FALSE)
+```
+
+El criterio de Laplace nos indica que la mejor decisión es la alternativa d1 con un valor optimo de 646.6667.
+
+###  Criterio del Punto Ideal:
+
+```{r}
+criterio.PuntoIdeal(tb01a,favorable = FALSE)
+```
+
+El criterio del Punto Ideal nos indica que la mejor decisión es la alternativa d3 con un valor optimo de 343.875.
+
+CONCLUSIÓN:
+
+En situación de costes, según los criterios de decisión bajo incertidumbre, las mejores decisiones son la alternativa d3 (Criterio de Wald, Hurwicz, Savage y Punto Ideal), la alternativa d4 (Criterio optimista) o la alternativa d1 (Criterio de Laplace).
+
+Si me tuviera que quedar con una única alternativa, elegiría la alternativa d3, ya que es la que más veces aparece como mejor decisión según los distintos criterios.
+
+\pagebreak
+
+# Problema 4
+
+Lucía y Marco tienen que mudarse este sábado y no se ponen de acuerdo sobre cómo hacerlo. Barajan estas opciones: Opción A: Alquilar furgoneta y hacerlo ellos • Pack de 3 horas de furgoneta con km incluidos: 110 €. • Combustible: 12 €. • Hora extra: 35 €. • Si llueve, comprarían fundas/plásticos 8 €. • Si el ascensor del piso nuevo falla, necesitarían 3 horas extra y pedir ayuda puntual 30 € para subir los muebles pesados.
+
+Opción B: Empresa “AhorraMudanzas” • Tarifa base 2 horas: 130 € (furgón y carga/descarga básicos). • Hora extra: 35 €. • Con lluvia o tráfico, suelen tardar 1 hora más. • Si el ascensor está averiado, estiman 2 horas extra y recargo 20 € por subir por escaleras.
+
+Opción C: Empresa “PremiumBox” • Tarifa plana hasta 4 horas: 220 € • Hora extra a partir de la 5.ª: 30 €. • Con lluvia o tráfico normalmente no hay recargos. • Si el ascensor falla, prevén 1 hora extra.
+
+Estados de la naturaleza:
+
+Mudanza fluida (sin lluvia/tráfico y ascensores funcionando).
+
+Lluvia o tráfico moderado.
+
+Ascensor averiado.
+
+SOLUCIÓN:
+
+Estamos ante un problema de decisión con un solo decisor. Puesto que lo que queremos es minimizar el gasto de la mudanza, nos encontramos con un modelo de costos.
+
+Se nos presentan 3 alternativas:
+
+-   d1: Opción A: Alquilar furgoneta y hacerlo ellos.
+-   d2: Opción B: Empresa “AhorraMudanzas”.
+-   d3: Opción C: Empresa “PremiumBox”.
+
+Los estados de la naturaleza son:
+
+-   e1: Mudanza fluida (sin lluvia/tráfico y ascensores funcionando).
+-   e2: Lluvia o tráfico moderado, pero con ascensores en orden.
+-   e3: Ascensor averiado, pero sin lluvia ni tráfico.
+
+## Valoraciones:
+
+Para e1:
+
+```{r}
+m11 = 110+12
+m21 = 130
+m31 = 220
+```
+
+Para e2:
+
+```{r}
+m12 = 110+12+8
+m22 = 130+35
+m32 = 220
+```
+
+Para e3:
+
+```{r}
+m13 = 110+12+30+3*35
+m23 = 130+20+2*35
+m33 = 220+30
+```
+
+## Creación de la matriz
+Construimos la tabla de decisiones:
+
+```{r}
+tb02 = crea.tablaX(c(m11,m12,m13,
+                      m21,m22,m23,
+                      m31,m32,m33),numalternativas=3,numestados=3)
+
+
+# Convertimos la tabla en un data.frame
+tabla_4 = as.data.frame(tb02)
+
+# Presentamos la tabla de valores
+tt(tabla_4, rownames = T)
+```
+
+
+## Solución de costes:
+En esta ocasión, vamos a aplicar todos los criterios a la vez con un único comando:
+
+```{r}
+criterio.Todos(tb02,alfa=0.5,favorable = FALSE)
+```
+
+Veamos también el criterio de Hurwicz variando alpha:
+
+```{r}
+dibuja.criterio.Hurwicz_Intervalos(tb02,F,T)
+```
+
+Vemos que para alpha entre 0 y 0.822 la mejor decisión es d2 y para alpha entre 0.822 y 1, la mejor decisión es d1.
+
+Conclusión:
+
+Observando los resultados de la tabla, la mejor decisión es la alternativa 2 (Empresa “AhorraMudanzas"). Esto es debido a que en 4 de los 6 criterios se toma como la mejor opción.
