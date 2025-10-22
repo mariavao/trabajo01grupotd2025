@@ -105,3 +105,55 @@ Mudanza fluida (sin lluvia/tráfico y ascensores funcionando).
 Lluvia o tráfico moderado.
 
 Ascensor averiado.
+
+\pagebreak
+
+# Problema 5
+
+Dada la siguiente tabla que recoge una matriz de valores numéricos, aplicar los criterios de decisión bajo incertidumbre:
+
+|    | e1  | e2 | e3 | e4 |
+| -- | --- | -- | -- | -- |
+| d1 | 85  | 40 | 65 | 30 |
+| d2 | 55  | 70 | 50 | 90 |
+| d3 | 20  | 95 | 80 | 45 |
+| d4 | 75  | 60 | 40 | 85 |
+| d5 | 100 | 55 | 70 | 20 |
+
+
+Siendo ei los distintos estados de la naturaleza (i= [1,4]) y di, las distintas opciones (i=[1,5])
+Resolver tanto para beneifcioes como para costos
+\pagebreak
+
+# Problema 6
+
+El juego de cartas Magic:The Gathering ha anunciado una colaboación con Sonic The Hedgehog.
+David, que es muy fan de ambas marcas, quiere comprar uno de los Secret Lairs, pero no se decide por cual decantarse.Además, debe tener en cuenta las siguientes posibilidades:
+Debido a la alta demanda, Wizard of the Coast no puede garantizar en que idioma llegarán los pedidos. Lo más probable es que lleguen en inglés, pero si fuera en español, el precio aumentaría debido a la exclusividad y demanda de cada set.
+Como el día de salida irá mucha gente a la tienda, es posible que vayan vendedores con mucho inventario, lo que le permitiría comprar además mejoras para el set que se compre.
+Como tiene que hacer la reserva por adelantado, debe decirle al dueño de la tienda que set va a reservar.Sus opciones son:
+
+Opción 1-Sonic:Friend and Foes
+  Coste base:29€
+  Extra en español:9€
+  Mejoras:5€
+
+Opcion 2-Sonic:Chasing Adventures
+  Coste base:22€
+  Extra en español:15€
+  Mejoras:8€
+
+Opcion 3-Sonic:Turbo Gear
+  Coste base:24€
+  Extra en español:4€
+  Mejoras:12€
+
+Estados de la naturaleza:
+
+-Set base sin mejoras
+
+-Set en español sin mejoras
+
+-Set base con mejoras
+
+-Set en español con mejoras
