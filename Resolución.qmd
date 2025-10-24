@@ -621,3 +621,229 @@ Vemos que para alpha entre 0 y 0.822 la mejor decisión es d2 y para alpha entre
 Conclusión:
 
 Observando los resultados de la tabla, la mejor decisión es la alternativa 2 (Empresa “AhorraMudanzas"). Esto es debido a que en 4 de los 6 criterios se toma como la mejor opción.
+
+\pagebreak
+
+# Problema 5
+Dada la siguiente tabla que recoge una matriz de valores numéricos, aplicar los criterios de decisión bajo incertidumbre:
+
+|    | e1  | e2 | e3 | e4 |
+| -- | --- | -- | -- | -- |
+| d1 | 85  | 40 | 65 | 30 |
+| d2 | 55  | 70 | 50 | 90 |
+| d3 | 20  | 95 | 80 | 45 |
+| d4 | 75  | 60 | 40 | 85 |
+| d5 | 100 | 55 | 70 | 20 |
+
+
+Siendo ei los distintos estados de la naturaleza (i= [1,4]) y di, las distintas opciones (i=[1,5])
+Resolver tanto para beneifcioes como para costos
+
+# Creamos la tabla para poder tratarla
+```{r}
+tablita = crea.tablaX(c(85,40, 65, 30,
+                       55, 70, 50, 90, 
+                       20, 95, 80, 45, 
+                       75, 60, 40, 85,
+                       100, 55, 70, 20), numalternativas = 5, numestados = 4)
+
+# Convertimos la tabla en un data.frame
+tablita = as.data.frame(tablita)
+
+# Comprobamos
+tt(tablita, rownames = T)
+```
+#Caso de beneficios
+
+### Criterio de Wald:
+
+```{r}
+criterio.Wald(tablita)
+```
+
+La decisión óptima en este caso es d2, con un valor de 50.
+
+###Criterio Maximax (optimista)
+
+```{r}
+criterio.Optimista(tablita)
+```
+
+La decisión óptima usando este criterio es d5, con un valor de 100.
+
+### Criterio de Hurwicz:
+ (Nótese que de aquí en adelante, para este ejercicio siempre usaremos 0.5 para el valor de α)
+
+```{r}
+criterio.Hurwicz(tablita,alfa=0.5)
+```
+
+Mediante Hurwicz llegamos a la conclusión de que la decisión óptima para α=0.5 es d2, con un valor de 70.
+
+Comprobamos mediante un gráfico cómo varía al hacerlo el alfa
+  
+```{r}
+dibuja.criterio.Hurwicz_Intervalos(tablita,T)
+```
+
+Observamos que para α hasta 0,75, la mejor opción es d2, mientras que de 0,75 a 1, es d5
+
+### Criterio de Savage:
+
+```{r}
+criterio.Savage(tablita)
+```
+Savage nos indica que la mejor decisión es d4, cuyo valor bajo este criterio es 40.
+
+### Criterio de Laplace:
+
+```{r}
+criterio.Laplace(tablita)
+```
+Con las condiciones propuestas por el criterio de Laplace, la decisión óptima es d2, con un valor de 66.25
+
+### Criterio del Punto Ideal:
+
+```{r}
+criterio.PuntoIdeal(tablita)
+```
+
+Siguiendo este criterio, la decisión óptima es d4, cuyo valor es 58.94913
+
+Vemos que la solución que más se repite es d2 en el caso de beneficios.
+
+# Caso:Costes
+Ahora haremos el análisis para el caso de costes
+
+### Criterio de Wald:
+
+```{r}
+criterio.Wald(tablita,F)
+```
+
+Las decisiones óptimas en este caso son d1 y d4, ambas con un valor de 85.
+
+###Criterio Maximax (optimista)
+
+```{r}
+criterio.Optimista(tablita,F)
+```
+
+Las decisiones óptimas usando este criterio son d3 y d5, con un valor de 20 ambas.
+
+### Criterio de Hurwicz:
+(Nótese que de aquí en adelante, para este ejercicio siempre usaremos 0.5 para el valor de α)
+
+```{r}
+criterio.Hurwicz(tablita,alfa=0.5,F)
+```
+
+Mediante Hurwicz llegamos a la conclusión de que las decisiones óptimas para α=0.5 son d1 y d3, con un valor de 57.5
+
+Comprobamos mediante un gráfico cómo varía al hacerlo el alfa
+
+```{r}
+dibuja.criterio.Hurwicz_Intervalos(tablita,F)
+```
+
+Observamos que para α hasta 0.5, la mejor opción es d1, mientras que de 0.5 a 1, es d3.
+
+### Criterio de Savage:
+
+```{r}
+criterio.Savage(tablita,F)
+```
+Savage nos indica que la mejor decisión es d3, cuyo valor bajo este criterio es 55.
+
+### Criterio de Laplace:
+
+```{r}
+criterio.Laplace(tablita,F)
+```
+Con las condiciones propuestas por el criterio de Laplace, la decisión óptima es d1, con un valor de 55
+
+### Criterio del Punto Ideal:
+
+```{r}
+criterio.PuntoIdeal(tablita,F)
+```
+
+Siguiendo este criterio, la decisión óptima es d1, cuyo valor es 70.35624
+
+
+
+Vemos que la solución que más se repite es d1 en el caso de costes.
+
+\pagebreak
+
+
+# Problema 6
+
+El juego de cartas Magic:The Gathering ha anunciado una colaboación con Sonic The Hedgehog.
+David, que es muy fan de ambas marcas, quiere comprar uno de los Secret Lairs, pero no se decide por cual decantarse.Además, debe tener en cuenta las siguientes posibilidades:
+Debido a la alta demanda, Wizard of the Coast no puede garantizar en que idioma llegarán los pedidos. Lo más probable es que lleguen en inglés, pero si fuera en español, el precio aumentaría debido a la exclusividad y demanda de cada set.
+Como el día de salida irá mucha gente a la tienda, es posible que vayan vendedores con mucho inventario, lo que le permitiría comprar además mejoras para el set que se compre.
+Como tiene que hacer la reserva por adelantado, debe decirle al dueño de la tienda que set va a reservar.Sus opciones son:
+  
+Opción 1-Sonic:Friend and Foes
+Coste base:28€
+Extra en español:7€
+Mejoras:5€
+
+Opcion 2-Sonic:Chasing Adventures
+Coste base:22€
+Extra en español:15€
+Mejoras:8€
+
+Opcion 3-Sonic:Turbo Gear
+Coste base:24€
+Extra en español:6€
+Mejoras:12€
+
+Estados de la naturaleza:
+  
+Set base sin mejoras
+
+Set en español sin mejoras
+
+Set base con mejoras
+
+Set en español con mejoras
+
+#Resolución
+
+Primero, crearemos los distintos valores. mi_j, siendo i=las distintas opciones/set (1,2,3), y j=los distintos estados de la naturaleza (1,2,3,4)
+
+m1_1=28
+m1_2=28+7
+m1_3=28+5
+m1_4=28+7+5
+m2_1=22
+m2_2=22+15
+m2_3=22+8
+m2_4=22+15+8
+m3_1=24
+m3_2=24+6
+m3_3=24+12
+m3_4=24+6+12
+
+magictabla= crea.tablaX(c(m1_1,m1_2,m1_3,m1_4,
+                          m2_1,m2_2,m2_3,m2_4,
+                          m3_1,m3_2,m3_3,m3_4), numalternativas = 3, numestados = 4,
+                     nb_alternativas = c("Friends and Foes", "Chasing Adventures", "Turbo Gear"),
+                     nb_estados = c("Base", "Español", "Base upgraded", "Español upgraded"))  
+
+# Convertimos la tabla en un data.frame
+magictabla = as.data.frame(magictabla)
+
+# Comprobamos
+tt(magictabla, rownames = T)
+
+Esta vez, en lugar de ir uno a uno, usaremos una función que aplica todos los criterios 
+(Nótese que, al igual que en el ejercicio anteior,usaremos α=0.5)
+
+criterio.Todos(magictabla,alfa=0.5,F)
+
+Llegamos a la conclusión de que la mejor opción a reservar es la tercera; Sonic:Turbo Gear, ya que es la óptima en 4 de los 6 criterios aplicados
+
+\pagebreak
