@@ -78,25 +78,11 @@ Aplicar los criterios de decisión bajo incertidumbre a los problemas cuya matri
 
 # Problema 4
 
-Lucía y Marco tienen que mudarse este sábado y no se ponen de acuerdo sobre cómo hacerlo. Barajan estas opciones: 
-Opción A: Alquilar furgoneta y hacerlo ellos 
-• Pack de 3 horas de furgoneta con km incluidos: 110 €. 
-• Combustible: 12 €. 
-• Hora extra: 35 €. 
-• Si llueve, comprarían fundas/plásticos 8 €. 
-• Si el ascensor del piso nuevo falla, necesitarían 3 horas extra y pedir ayuda puntual 30 € para subir los muebles pesados.
+Lucía y Marco tienen que mudarse este sábado y no se ponen de acuerdo sobre cómo hacerlo. Barajan estas opciones: Opción A: Alquilar furgoneta y hacerlo ellos • Pack de 3 horas de furgoneta con km incluidos: 110 €. • Combustible: 12 €. • Hora extra: 35 €. • Si llueve, comprarían fundas/plásticos 8 €. • Si el ascensor del piso nuevo falla, necesitarían 3 horas extra y pedir ayuda puntual 30 € para subir los muebles pesados.
 
-Opción B: Empresa “AhorraMudanzas” 
-• Tarifa base 2 horas: 130 € (furgón y carga/descarga básicos). 
-• Hora extra: 35 €. 
-• Con lluvia o tráfico, suelen tardar 1 hora más. 
-• Si el ascensor está averiado, estiman 2 horas extra y recargo 20 € por subir por escaleras.
+Opción B: Empresa “AhorraMudanzas” • Tarifa base 2 horas: 130 € (furgón y carga/descarga básicos). • Hora extra: 35 €. • Con lluvia o tráfico, suelen tardar 1 hora más. • Si el ascensor está averiado, estiman 2 horas extra y recargo 20 € por subir por escaleras.
 
-Opción C: Empresa “PremiumBox” 
-• Tarifa plana hasta 4 horas: 220 € 
-• Hora extra a partir de la 5.ª: 30 €. 
-• Con lluvia o tráfico normalmente no hay recargos. 
-• Si el ascensor falla, prevén 1 hora extra.
+Opción C: Empresa “PremiumBox” • Tarifa plana hasta 4 horas: 220 € • Hora extra a partir de la 5.ª: 30 €. • Con lluvia o tráfico normalmente no hay recargos. • Si el ascensor falla, prevén 1 hora extra.
 
 Estados de la naturaleza:
 
@@ -112,41 +98,25 @@ Ascensor averiado.
 
 Dada la siguiente tabla que recoge una matriz de valores numéricos, aplicar los criterios de decisión bajo incertidumbre:
 
-|    | e1  | e2 | e3 | e4 |
-| -- | --- | -- | -- | -- |
-| d1 | 85  | 40 | 65 | 30 |
-| d2 | 55  | 70 | 50 | 90 |
-| d3 | 20  | 95 | 80 | 45 |
-| d4 | 75  | 60 | 40 | 85 |
-| d5 | 100 | 55 | 70 | 20 |
+|     | e1  | e2  | e3  | e4  |
+|-----|-----|-----|-----|-----|
+| d1  | 85  | 40  | 65  | 30  |
+| d2  | 55  | 70  | 50  | 90  |
+| d3  | 20  | 95  | 80  | 45  |
+| d4  | 75  | 60  | 40  | 85  |
+| d5  | 100 | 55  | 70  | 20  |
 
-
-Siendo ei los distintos estados de la naturaleza (i= [1,4]) y di, las distintas opciones (i=[1,5])
-Resolver tanto para beneifcioes como para costos
-\pagebreak
+Siendo ei los distintos estados de la naturaleza (i= \[1,4\]) y di, las distintas opciones (i=\[1,5\]) Resolver tanto para beneifcioes como para costos \pagebreak
 
 # Problema 6
 
-El juego de cartas Magic:The Gathering ha anunciado una colaboación con Sonic The Hedgehog.
-David, que es muy fan de ambas marcas, quiere comprar uno de los Secret Lairs, pero no se decide por cual decantarse.Además, debe tener en cuenta las siguientes posibilidades:
-Debido a la alta demanda, Wizard of the Coast no puede garantizar en que idioma llegarán los pedidos. Lo más probable es que lleguen en inglés, pero si fuera en español, el precio aumentaría debido a la exclusividad y demanda de cada set.
-Como el día de salida irá mucha gente a la tienda, es posible que vayan vendedores con mucho inventario, lo que le permitiría comprar además mejoras para el set que se compre.
-Como tiene que hacer la reserva por adelantado, debe decirle al dueño de la tienda que set va a reservar.Sus opciones son:
+El juego de cartas Magic:The Gathering ha anunciado una colaboación con Sonic The Hedgehog. David, que es muy fan de ambas marcas, quiere comprar uno de los Secret Lairs, pero no se decide por cual decantarse.Además, debe tener en cuenta las siguientes posibilidades: Debido a la alta demanda, Wizard of the Coast no puede garantizar en que idioma llegarán los pedidos. Lo más probable es que lleguen en inglés, pero si fuera en español, el precio aumentaría debido a la exclusividad y demanda de cada set. Como el día de salida irá mucha gente a la tienda, es posible que vayan vendedores con mucho inventario, lo que le permitiría comprar además mejoras para el set que se compre. Como tiene que hacer la reserva por adelantado, debe decirle al dueño de la tienda que set va a reservar.Sus opciones son:
 
-Opción 1-Sonic:Friend and Foes
-  Coste base:28€
-  Extra en español:7€
-  Mejoras:5€
+Opción 1-Sonic:Friend and Foes Coste base:28€ Extra en español:7€ Mejoras:5€
 
-Opcion 2-Sonic:Chasing Adventures
-  Coste base:22€
-  Extra en español:15€
-  Mejoras:8€
+Opcion 2-Sonic:Chasing Adventures Coste base:22€ Extra en español:15€ Mejoras:8€
 
-Opcion 3-Sonic:Turbo Gear
-  Coste base:24€
-  Extra en español:6€
-  Mejoras:12€
+Opcion 3-Sonic:Turbo Gear Coste base:24€ Extra en español:6€ Mejoras:12€
 
 Estados de la naturaleza:
 
@@ -157,3 +127,59 @@ Estados de la naturaleza:
 -Set base con mejoras
 
 -Set en español con mejoras
+
+# Problema 7
+
+Un cirujano debe elegir un procedimiento quirúrgico que aplicar sobre el caso de un paciente con una enfermedad que afecta a su calidad de vida pero sin riesgo de muerte. Con la cirugía se pretende mejorar su condición actual.
+
+Si el procedimiento resulta exitoso, el paciente podrá ahorrar un gasto sanitario procedente de los tratamientos,controles y medicamentos que toma actualmente o que necesitará en el post-cirugía. Si el procedimiento es ineficaz se habrá incurrido en un gasto quirúrgico innecesario y/o se incrementará el gasto, en caso de ser contraproducente.
+
+Alternativas:\
+a1 - No operar\
+a2 - Operar con complejidad baja\
+a3 - Operar con complejidad media\
+a4 - Operar con complejidad alta
+
+Escenarios (estados de la naturaleza):\
+w1 - empeora\
+w2 - no mejora\
+w3 - mejora parcialmente\
+w4 - mejora completamente
+
+Coste quirúrgico según la alternativa:\
+CQ1 - 0\
+CQ2 - 10mil\
+CQ3 - 15mil\
+CQ4 - 20mil
+
+Costes de mantenimiento y control de la enfermedad por año: CM1 - 5mil\
+CM2 - 3mil\
+CM3 - 1mil\
+CM4 - 0
+
+El resultado (gasto total a los 5 años, en miles de euros) de una elección será:\
+
+Gasto_ij = CQ_i + 5\*CM_J\
+
+# Problema 8
+
+Una farmacéutica está evaluando cómo afrontar su nula de oferta en medicamentos para tratar la diabetes decidiendo la vía más rentable bajo ciertas circunstancias como: la acogida del mercado y proceso de obtención de las licencias sanitarias.
+
+Alternativas posibles:\
+a1 - No afrontar un nuevo producto\
+a2 - Colaborar con la competencia utilizando unas patentes externas\
+a3 - Investigar y desarrollar un producto propio
+
+Circunstancias plausibles:\
+m1 - El mercado no acepta el producto como cabía esperar\
+m2 - El mercado lo acepta\
+l1 - El organismo certificador rechaza la primera solictud de licencias\
+l2 - El certificado emite las licencias
+
+Estados de naturaleza:\
+w1 = m1&l1\
+w2 = m1&l2\
+w3 = m2&l1\
+w4 = m2&l2
+
+El resultado se medirá como el beneficio esperado menos los costes de producción y de desarrollo.

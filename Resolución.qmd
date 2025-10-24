@@ -621,3 +621,119 @@ Vemos que para alpha entre 0 y 0.822 la mejor decisión es d2 y para alpha entre
 Conclusión:
 
 Observando los resultados de la tabla, la mejor decisión es la alternativa 2 (Empresa “AhorraMudanzas"). Esto es debido a que en 4 de los 6 criterios se toma como la mejor opción.
+
+# Problema 7
+
+## Definición de la tabla de decisión
+
+```{r p7_tabla}
+CQ<-c(0,5,7,13)
+CM<-c(8,4,8,0)
+CM5<-CM*5
+
+costes<-outer(CQ,CM5,FUN="+")
+costes<-as.data.frame(costes)
+rownames(costes)<-c("no_operar","tecnica1","tecnica2","tecnica3")
+colnames(costes)<-c("empeora","no_mejora","mej_parcial","mej_total")
+
+tt(costes)
+```
+
+## Criterios de decisión
+
+### Caso pesimista o desfavorable
+
+Vamos a suponer un criterio pesimista sobre la eficacia de la intervención en relación al coste sanitario esperado.
+
+```{r p7_desfav}
+p7_todos_p<-criterio.Todos(costes,alfa=0.3,favorable=F)
+nom_crit<-colnames(p7_todos_p)[5:10]
+p7_todos_p<-t(p7_todos_p[5,5:10])
+
+resul7_todos_p<-data.frame(nom_crit,p7_todos_p)
+colnames(resul7_todos_p)<-c("Criterio","Decisión")
+
+tt(resul7_todos_p)
+```
+
+La decisión óptima unánime consistiría en no operar al paciente si consideramos una inclinación pesimista.
+
+Todos eligen la opción de no operar al paciente y asumir los costes de mantenimiento pre-cirugía.
+
+### En el caso optimista o favorable:
+
+```{r p7_fav}
+p7_todos_o<-criterio.Todos(costes,alfa=0.5,favorable=T)
+nom_crit<-colnames(p7_todos_o)[5:10]
+p7_todos_o<-t(p7_todos_o[5,5:10])
+
+resul7_todos_o<-data.frame(nom_crit,p7_todos_o)
+colnames(resul7_todos_o)<-c("Criterio","Decisión")
+
+tt(resul7_todos_o)
+```
+
+Los criterios indican aplicar que la técnica de complejidad media es la más adecuada para reducir los costes sanitarios a medio plazo.
+
+## Problema 8
+
+## Tabla de decisión
+
+```{r p8_tabla}
+ingreso<-c(0,0,0,0,5,5,30,30,5,39,5,30)
+costes_prod<-c(0,0,0,0,10,10,10,10,2,2,2,2)
+costes_inv<-c(0,0,0,0,4,2,4,2,24,24,12,12)
+
+Beneficio_esperado<-ingreso-costes_prod-costes_inv
+Beneficio_esperado<-matrix(Beneficio_esperado,nrow = 3,ncol=4,byrow=T)
+Beneficio_esperado<-as.data.frame(Beneficio_esperado)
+colnames(Beneficio_esperado)<-c("m.mal_l.mal","m.mal_l.bien","m.bien_l.mal","m.bien_l.bien")
+rownames(Beneficio_esperado)<-c("no_asumir","colaborar","desarrollar")
+
+tt(Beneficio_esperado,rownames=T)
+```
+
+## Opciones óptimas según los distintos criterios
+
+### Caso pesimista
+
+Se tiende a un perfil conservador respecto a las potenciales pérdidas.
+
+```{r p8_desfav}
+#Beneficio_esperado<-as.matrix(Beneficio_esperado)
+p8_todos_p<-criterio.Todos(Beneficio_esperado,alfa=0.3,favorable=F)
+nom_crit<-colnames(p8_todos_p)[5:10]
+p8_todos_p<-t(p8_todos_p[4,5:10])
+
+resul8_todos_p<-data.frame(nom_crit,p8_todos_p)
+colnames(resul8_todos_p)<-c("Criterio","Decisión")
+
+tt(resul8_todos_p)
+```
+
+**Wald**, **Hurwicz**, **Punto ideal**:\
+no asumir un nuevo producto para la diabetes es la alternativa más conservadora respecto a las pérdidas.
+
+**Savage**, **Laplace**, **optimista**:\
+Escoger la opción desarrollar un nuevo es la que produce mayor pérdida potencial.
+
+### caso optimista
+
+Se tiende a un perfil conservador respecto a las potenciales beneficios o pérdidas de oportunidad:
+
+```{r p8_fav}
+#Beneficio_esperado<-as.matrix(Beneficio_esperado)
+p8_todos_o<-criterio.Todos(Beneficio_esperado,alfa=0.5,favorable=T)
+nom_crit<-colnames(p8_todos_o)[5:10]
+p8_todos_o<-t(p8_todos_o[4,5:10])
+
+resul8_todos_o<-data.frame(nom_crit,p8_todos_o)
+colnames(resul8_todos_o)<-c("Criterio","Decisión")
+
+tt(resul8_todos_o)
+
+```
+
+**Wald, Savage**: El criterio más adecuado bajo para Wald es no afrontar pérdidas. Para Savage el arrepentimiento máximo sería haber asumido riesgos de pérdidas colaborando o desarrollando para un nuevo producto.
+
+**Laplace, P.Ideal, Hurwictz**: La mejor opción es apostar por el beneficio esperado obtenido mediante el desarrollo de un nuevo producto.
