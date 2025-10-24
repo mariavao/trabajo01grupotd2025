@@ -134,8 +134,8 @@ Como el día de salida irá mucha gente a la tienda, es posible que vayan vended
 Como tiene que hacer la reserva por adelantado, debe decirle al dueño de la tienda que set va a reservar.Sus opciones son:
 
 Opción 1-Sonic:Friend and Foes
-  Coste base:29€
-  Extra en español:9€
+  Coste base:28€
+  Extra en español:7€
   Mejoras:5€
 
 Opcion 2-Sonic:Chasing Adventures
@@ -145,7 +145,7 @@ Opcion 2-Sonic:Chasing Adventures
 
 Opcion 3-Sonic:Turbo Gear
   Coste base:24€
-  Extra en español:4€
+  Extra en español:6€
   Mejoras:12€
 
 Estados de la naturaleza:
